@@ -32,6 +32,25 @@
     <packagedElement xmi:type="uml:Dependency" xmi:id="_I-0-cEMZEfGUsvfU6if9iw" client="_uDWPcEMYEfGUsvfU6if9iw" supplier="_uO7NUEMYEfGUsvfU6if9iw"/>
     <packagedElement xmi:type="uml:Dependency" xmi:id="_JqTkYEMZEfGUsvfU6if9iw" client="_uO7NUEMYEfGUsvfU6if9iw" supplier="_7xqZkEMYEfGUsvfU6if9iw"/>
     <packagedElement xmi:type="uml:Dependency" xmi:id="_KzUa4EMZEfGUsvfU6if9iw" client="_mhoxgEMYEfGUsvfU6if9iw" supplier="_t1UagEMYEfGUsvfU6if9iw"/>
+    <packagedElement xmi:type="uml:Activity" xmi:id="_yvLHgEPrEfG2RO62M5NOmg" name="CasoEstudio1" node="_pgktIEPvEfG2RO62M5NOmg _uk5QsEPxEfG2RO62M5NOmg _yi5XUEPxEfG2RO62M5NOmg _27quYEPxEfG2RO62M5NOmg _6kRMwEPxEfG2RO62M5NOmg _ac5VwEPzEfG2RO62M5NOmg _hXUKMEPzEfG2RO62M5NOmg" group="_jrIZMEPuEfG2RO62M5NOmg _lQsBwEPuEfG2RO62M5NOmg _oX5DQEPuEfG2RO62M5NOmg">
+      <edge xmi:type="uml:ControlFlow" xmi:id="_q6w2YEPzEfG2RO62M5NOmg" target="_uk5QsEPxEfG2RO62M5NOmg" source="_pgktIEPvEfG2RO62M5NOmg"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_uLRk4EPzEfG2RO62M5NOmg" target="_ac5VwEPzEfG2RO62M5NOmg" source="_uk5QsEPxEfG2RO62M5NOmg"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_v2NcsEPzEfG2RO62M5NOmg" name="OK" target="_yi5XUEPxEfG2RO62M5NOmg" source="_ac5VwEPzEfG2RO62M5NOmg"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_z9n-AEPzEfG2RO62M5NOmg" target="_27quYEPxEfG2RO62M5NOmg" source="_yi5XUEPxEfG2RO62M5NOmg"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_1-4rIEPzEfG2RO62M5NOmg" target="_6kRMwEPxEfG2RO62M5NOmg" source="_27quYEPxEfG2RO62M5NOmg"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_3TYY4EPzEfG2RO62M5NOmg" target="_hXUKMEPzEfG2RO62M5NOmg" source="_6kRMwEPxEfG2RO62M5NOmg"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_xvr04EP1EfG2RO62M5NOmg" name="ERROR" target="_hXUKMEPzEfG2RO62M5NOmg" source="_ac5VwEPzEfG2RO62M5NOmg"/>
+      <group xmi:type="uml:ActivityPartition" xmi:id="_jrIZMEPuEfG2RO62M5NOmg" name="FrontEnd"/>
+      <group xmi:type="uml:ActivityPartition" xmi:id="_lQsBwEPuEfG2RO62M5NOmg" name="BackEnd"/>
+      <group xmi:type="uml:ActivityPartition" xmi:id="_oX5DQEPuEfG2RO62M5NOmg" name="BaseDeDatos"/>
+      <node xmi:type="uml:InitialNode" xmi:id="_pgktIEPvEfG2RO62M5NOmg" name="Start_Consulta" outgoing="_q6w2YEPzEfG2RO62M5NOmg"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_uk5QsEPxEfG2RO62M5NOmg" name="Validar_Credenciales" incoming="_q6w2YEPzEfG2RO62M5NOmg" outgoing="_uLRk4EPzEfG2RO62M5NOmg"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_yi5XUEPxEfG2RO62M5NOmg" name="Seleccionar_Espacio" incoming="_v2NcsEPzEfG2RO62M5NOmg" outgoing="_z9n-AEPzEfG2RO62M5NOmg"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_27quYEPxEfG2RO62M5NOmg" name="Consultar_BD" incoming="_z9n-AEPzEfG2RO62M5NOmg" outgoing="_1-4rIEPzEfG2RO62M5NOmg"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_6kRMwEPxEfG2RO62M5NOmg" name="Mostrar_Horarios" incoming="_1-4rIEPzEfG2RO62M5NOmg" outgoing="_3TYY4EPzEfG2RO62M5NOmg"/>
+      <node xmi:type="uml:DecisionNode" xmi:id="_ac5VwEPzEfG2RO62M5NOmg" name="DecisionNode9" incoming="_uLRk4EPzEfG2RO62M5NOmg" outgoing="_v2NcsEPzEfG2RO62M5NOmg _xvr04EP1EfG2RO62M5NOmg"/>
+      <node xmi:type="uml:ActivityFinalNode" xmi:id="_hXUKMEPzEfG2RO62M5NOmg" name="Finish_Consulta" incoming="_3TYY4EPzEfG2RO62M5NOmg _xvr04EP1EfG2RO62M5NOmg"/>
+    </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Iq6ewEMrEfGwOovsXalXrA">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_IrJvUEMrEfGwOovsXalXrA" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/MARTE/1#/"/>
@@ -253,4 +272,17 @@
     <utilization>0.4</utilization>
     <throughput>500 req/s</throughput>
   </GQAM:GaExecHost>
+  <GQAM:GaWorkloadEvent xmi:id="_kAldEEP0EfG2RO62M5NOmg" pattern="(closed, population=50)" base_NamedElement="_pgktIEPvEfG2RO62M5NOmg"/>
+  <GQAM:GaStep xmi:id="_zFAegEP0EfG2RO62M5NOmg" base_NamedElement="_uk5QsEPxEfG2RO62M5NOmg" base_Action="_uk5QsEPxEfG2RO62M5NOmg">
+    <execTime>(mean=15, unit=ms)</execTime>
+  </GQAM:GaStep>
+  <GQAM:GaStep xmi:id="_B6rSQEP1EfG2RO62M5NOmg" base_NamedElement="_v2NcsEPzEfG2RO62M5NOmg" prob="0.85"/>
+  <GQAM:GaStep xmi:id="_Lshm0EP1EfG2RO62M5NOmg" base_NamedElement="_27quYEPxEfG2RO62M5NOmg" base_Action="_27quYEPxEfG2RO62M5NOmg">
+    <execTime>(mean=50, unit=ms)</execTime>
+  </GQAM:GaStep>
+  <GQAM:GaStep xmi:id="_Wx-4UEP1EfG2RO62M5NOmg" base_NamedElement="_yi5XUEPxEfG2RO62M5NOmg" base_Action="_yi5XUEPxEfG2RO62M5NOmg" rep="1.5"/>
+  <GQAM:GaStep xmi:id="_1bYDgEP1EfG2RO62M5NOmg" base_NamedElement="_xvr04EP1EfG2RO62M5NOmg" prob="0.15"/>
+  <GQAM:GaStep xmi:id="_kdHgsEP3EfG2RO62M5NOmg" base_NamedElement="_6kRMwEPxEfG2RO62M5NOmg" base_Action="_6kRMwEPxEfG2RO62M5NOmg">
+    <execTime>(mean=30, unit=ms)</execTime>
+  </GQAM:GaStep>
 </xmi:XMI>
