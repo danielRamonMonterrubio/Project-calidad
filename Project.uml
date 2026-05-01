@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:GQAM="http://www.eclipse.org/papyrus/GQAM/1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/GQAM/1 http://www.eclipse.org/papyrus/MARTE/1#//GQAM">
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:GQAM="http://www.eclipse.org/papyrus/GQAM/1" xmlns:PAM="http://www.eclipse.org/papyrus/PAM/1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/GQAM/1 http://www.eclipse.org/papyrus/MARTE/1#//GQAM http://www.eclipse.org/papyrus/PAM/1 http://www.eclipse.org/papyrus/MARTE/1#//PAM">
   <uml:Model xmi:id="_zUCX4EMWEfGTsuz0fjQ6AQ" name="Project">
     <packageImport xmi:type="uml:PackageImport" xmi:id="_zgjJ4EMWEfGTsuz0fjQ6AQ">
       <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
@@ -69,7 +69,7 @@
       <edge xmi:type="uml:ControlFlow" xmi:id="_THjTEESnEfG5IfPuLrm8vg" target="_0guloESkEfG5IfPuLrm8vg" source="_RSlVgESnEfG5IfPuLrm8vg"/>
       <edge xmi:type="uml:ControlFlow" xmi:id="_V8UgwESnEfG5IfPuLrm8vg" target="_RSlVgESnEfG5IfPuLrm8vg" source="_6JLmcESlEfG5IfPuLrm8vg"/>
       <edge xmi:type="uml:ControlFlow" xmi:id="_h8DpMESnEfG5IfPuLrm8vg" name="OK" target="_afJLsESnEfG5IfPuLrm8vg" source="_RSlVgESnEfG5IfPuLrm8vg"/>
-      <edge xmi:type="uml:ControlFlow" xmi:id="_mFKMkESnEfG5IfPuLrm8vg" name="ERROR" inPartition="_M0LyMESUEfG5IfPuLrm8vg" target="_MrqnAESiEfG5IfPuLrm8vg" source="_afJLsESnEfG5IfPuLrm8vg"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_mFKMkESnEfG5IfPuLrm8vg" inPartition="_M0LyMESUEfG5IfPuLrm8vg" target="_MrqnAESiEfG5IfPuLrm8vg" source="_afJLsESnEfG5IfPuLrm8vg"/>
       <group xmi:type="uml:ActivityPartition" xmi:id="_M0LyMESUEfG5IfPuLrm8vg" name="Frontend" node="_XEMpcESUEfG5IfPuLrm8vg _sLwi8ESdEfG5IfPuLrm8vg _MrqnAESiEfG5IfPuLrm8vg _0guloESkEfG5IfPuLrm8vg _afJLsESnEfG5IfPuLrm8vg" edge="_DyDaoESlEfG5IfPuLrm8vg _mFKMkESnEfG5IfPuLrm8vg"/>
       <group xmi:type="uml:ActivityPartition" xmi:id="_QBqa0ESUEfG5IfPuLrm8vg" name="Backend" node="_b3XHYESdEfG5IfPuLrm8vg _IQUdEESiEfG5IfPuLrm8vg _yaEGAESiEfG5IfPuLrm8vg _sUcWIESjEfG5IfPuLrm8vg _DNULUESkEfG5IfPuLrm8vg _uR0zYESkEfG5IfPuLrm8vg _ouZKkESlEfG5IfPuLrm8vg _RSlVgESnEfG5IfPuLrm8vg" edge="_a2vloESiEfG5IfPuLrm8vg _v1gpIESjEfG5IfPuLrm8vg _SN4AcESkEfG5IfPuLrm8vg _3uY_AESlEfG5IfPuLrm8vg"/>
       <group xmi:type="uml:ActivityPartition" xmi:id="_SnvsQESUEfG5IfPuLrm8vg" name="BBDD" node="_kPd9oESkEfG5IfPuLrm8vg _6JLmcESlEfG5IfPuLrm8vg"/>
@@ -323,29 +323,88 @@
   <GQAM:GaStep xmi:id="_kdHgsEP3EfG2RO62M5NOmg" base_NamedElement="_6kRMwEPxEfG2RO62M5NOmg" base_Action="_6kRMwEPxEfG2RO62M5NOmg">
     <execTime>(mean=30, unit=ms)</execTime>
   </GQAM:GaStep>
-  <GQAM:GaWorkloadEvent xmi:id="_Zr9V4ESUEfG5IfPuLrm8vg" pattern="" base_NamedElement="_XEMpcESUEfG5IfPuLrm8vg"/>
-  <GQAM:GaStep xmi:id="_hBwIoESdEfG5IfPuLrm8vg" base_NamedElement="_b3XHYESdEfG5IfPuLrm8vg" base_Action="_b3XHYESdEfG5IfPuLrm8vg"/>
-  <GQAM:GaStep xmi:id="_5eeWMESdEfG5IfPuLrm8vg" base_NamedElement="_sLwi8ESdEfG5IfPuLrm8vg" base_Action="_sLwi8ESdEfG5IfPuLrm8vg"/>
-  <GQAM:GaStep xmi:id="_if-A0ESiEfG5IfPuLrm8vg" base_NamedElement="_kVhmgESdEfG5IfPuLrm8vg"/>
-  <GQAM:GaStep xmi:id="_0E4CAESiEfG5IfPuLrm8vg" base_NamedElement="_yaEGAESiEfG5IfPuLrm8vg" base_Action="_yaEGAESiEfG5IfPuLrm8vg"/>
-  <GQAM:GaStep xmi:id="_CCXQkESjEfG5IfPuLrm8vg" base_NamedElement="_ANfZoESjEfG5IfPuLrm8vg"/>
-  <GQAM:GaStep xmi:id="_LHdz4ESjEfG5IfPuLrm8vg" base_NamedElement="_JpVB8ESjEfG5IfPuLrm8vg"/>
-  <GQAM:GaStep xmi:id="_gbytIESjEfG5IfPuLrm8vg" base_NamedElement="_e9cf0ESjEfG5IfPuLrm8vg"/>
-  <GQAM:GaStep xmi:id="_1WIZEESjEfG5IfPuLrm8vg" base_NamedElement="_w1EBoESjEfG5IfPuLrm8vg"/>
-  <GQAM:GaStep xmi:id="_NwbkwESkEfG5IfPuLrm8vg" base_NamedElement="_DNULUESkEfG5IfPuLrm8vg" base_Action="_DNULUESkEfG5IfPuLrm8vg"/>
-  <GQAM:GaStep xmi:id="_qrPHMESkEfG5IfPuLrm8vg" base_NamedElement="_pYIgkESkEfG5IfPuLrm8vg"/>
-  <GQAM:GaStep xmi:id="_B1bV4ESlEfG5IfPuLrm8vg" base_NamedElement="_0guloESkEfG5IfPuLrm8vg" base_Action="_0guloESkEfG5IfPuLrm8vg"/>
-  <GQAM:GaStep xmi:id="_GI3hAESlEfG5IfPuLrm8vg" base_NamedElement="_DyDaoESlEfG5IfPuLrm8vg"/>
-  <GQAM:GaStep xmi:id="_ngdX0ESlEfG5IfPuLrm8vg" base_NamedElement="_lywf4ESlEfG5IfPuLrm8vg"/>
-  <GQAM:GaStep xmi:id="_uk7gIESlEfG5IfPuLrm8vg" base_NamedElement="_ouZKkESlEfG5IfPuLrm8vg" base_Action="_ouZKkESlEfG5IfPuLrm8vg"/>
-  <GQAM:GaStep xmi:id="_4ujbgESlEfG5IfPuLrm8vg" base_NamedElement="_3uY_AESlEfG5IfPuLrm8vg"/>
-  <GQAM:GaStep xmi:id="__1Q_gESlEfG5IfPuLrm8vg" base_NamedElement="_6JLmcESlEfG5IfPuLrm8vg" base_Action="_6JLmcESlEfG5IfPuLrm8vg"/>
-  <GQAM:GaStep xmi:id="_GI0oQESmEfG5IfPuLrm8vg" base_NamedElement="_Ey1swESmEfG5IfPuLrm8vg"/>
-  <GQAM:GaScenario xmi:id="_iftlUESmEfG5IfPuLrm8vg" base_NamedElement="_Z14qwESQEfG5IfPuLrm8vg" base_Behavior="_Z14qwESQEfG5IfPuLrm8vg"/>
-  <GQAM:GaAnalysisContext xmi:id="_ifwooESmEfG5IfPuLrm8vg" base_StructuredClassifier="_Z14qwESQEfG5IfPuLrm8vg" base_NamedElement="_Z14qwESQEfG5IfPuLrm8vg"/>
-  <GQAM:GaStep xmi:id="_XNJ2gESnEfG5IfPuLrm8vg" base_NamedElement="_V8UgwESnEfG5IfPuLrm8vg"/>
-  <GQAM:GaStep xmi:id="_f-VYQESnEfG5IfPuLrm8vg" base_NamedElement="_THjTEESnEfG5IfPuLrm8vg"/>
-  <GQAM:GaStep xmi:id="_i8dWQESnEfG5IfPuLrm8vg" base_NamedElement="_h8DpMESnEfG5IfPuLrm8vg"/>
-  <GQAM:GaStep xmi:id="_odTIoESnEfG5IfPuLrm8vg" base_NamedElement="_mFKMkESnEfG5IfPuLrm8vg"/>
-  <GQAM:GaStep xmi:id="_pvDEYESnEfG5IfPuLrm8vg" base_NamedElement="_afJLsESnEfG5IfPuLrm8vg" base_Action="_afJLsESnEfG5IfPuLrm8vg"/>
+  <GQAM:GaWorkloadEvent xmi:id="_Zr9V4ESUEfG5IfPuLrm8vg" pattern="(open=(arrivalRate=(2,Hz,mean,est)))" base_NamedElement="_XEMpcESUEfG5IfPuLrm8vg"/>
+  <GQAM:GaStep xmi:id="_hBwIoESdEfG5IfPuLrm8vg" base_NamedElement="_b3XHYESdEfG5IfPuLrm8vg" base_Action="_b3XHYESdEfG5IfPuLrm8vg" rep="(value=10)">
+    <hostDemand>(value= 2, unit=ms, statQ=min, source=est)</hostDemand>
+  </GQAM:GaStep>
+  <GQAM:GaStep xmi:id="_if-A0ESiEfG5IfPuLrm8vg" base_NamedElement="_kVhmgESdEfG5IfPuLrm8vg">
+    <hostDemand>(value= 2, unit=ms, statQ=min, source=est)</hostDemand>
+  </GQAM:GaStep>
+  <GQAM:GaStep xmi:id="_0E4CAESiEfG5IfPuLrm8vg" base_NamedElement="_yaEGAESiEfG5IfPuLrm8vg" base_Action="_yaEGAESiEfG5IfPuLrm8vg" rep="(value=10)">
+    <hostDemand>(value= 2, unit=ms, statQ=min, source=est)</hostDemand>
+  </GQAM:GaStep>
+  <GQAM:GaStep xmi:id="_CCXQkESjEfG5IfPuLrm8vg" base_NamedElement="_ANfZoESjEfG5IfPuLrm8vg" rep="(value=10)" prob="(expr=1-$pb)">
+    <hostDemand>(value= 2, unit=ms, statQ=min, source=est)</hostDemand>
+  </GQAM:GaStep>
+  <GQAM:GaStep xmi:id="_LHdz4ESjEfG5IfPuLrm8vg" base_NamedElement="_JpVB8ESjEfG5IfPuLrm8vg" rep="(value=10)" prob="(expr=$pb)">
+    <hostDemand>(value= 2, unit=ms, statQ=min, source=est)</hostDemand>
+  </GQAM:GaStep>
+  <GQAM:GaStep xmi:id="_gbytIESjEfG5IfPuLrm8vg" base_NamedElement="_e9cf0ESjEfG5IfPuLrm8vg" rep="(value=10)">
+    <hostDemand>(value= 2, unit=ms, statQ=min, source=est)</hostDemand>
+  </GQAM:GaStep>
+  <GQAM:GaStep xmi:id="_1WIZEESjEfG5IfPuLrm8vg" base_NamedElement="_w1EBoESjEfG5IfPuLrm8vg" rep="(value=10)" prob="(expr=1-$pb)">
+    <hostDemand>(value= 2, unit=ms, statQ=min, source=est)</hostDemand>
+  </GQAM:GaStep>
+  <GQAM:GaStep xmi:id="_NwbkwESkEfG5IfPuLrm8vg" base_NamedElement="_DNULUESkEfG5IfPuLrm8vg" base_Action="_DNULUESkEfG5IfPuLrm8vg" rep="(value=10)">
+    <hostDemand>(value= 2, unit=ms, statQ=min, source=est)</hostDemand>
+  </GQAM:GaStep>
+  <GQAM:GaStep xmi:id="_qrPHMESkEfG5IfPuLrm8vg" base_NamedElement="_pYIgkESkEfG5IfPuLrm8vg" rep="(value=10)">
+    <hostDemand>(value= 2, unit=ms, statQ=min, source=est)</hostDemand>
+  </GQAM:GaStep>
+  <GQAM:GaStep xmi:id="_B1bV4ESlEfG5IfPuLrm8vg" base_NamedElement="_0guloESkEfG5IfPuLrm8vg" base_Action="_0guloESkEfG5IfPuLrm8vg" rep="(value=10)">
+    <hostDemand>(value= 2, unit=ms, statQ=min, source=est)</hostDemand>
+  </GQAM:GaStep>
+  <GQAM:GaStep xmi:id="_GI3hAESlEfG5IfPuLrm8vg" base_NamedElement="_DyDaoESlEfG5IfPuLrm8vg" rep="(value=10)">
+    <hostDemand>(value= 2, unit=ms, statQ=min, source=est)</hostDemand>
+  </GQAM:GaStep>
+  <GQAM:GaStep xmi:id="_ngdX0ESlEfG5IfPuLrm8vg" base_NamedElement="_lywf4ESlEfG5IfPuLrm8vg" rep="(value=10)" prob="(expr=1-$pb)">
+    <hostDemand>(value= 2, unit=ms, statQ=min, source=est)</hostDemand>
+  </GQAM:GaStep>
+  <GQAM:GaStep xmi:id="_uk7gIESlEfG5IfPuLrm8vg" base_NamedElement="_ouZKkESlEfG5IfPuLrm8vg" base_Action="_ouZKkESlEfG5IfPuLrm8vg" rep="(value=10)">
+    <hostDemand>(value= 2, unit=ms, statQ=min, source=est)</hostDemand>
+  </GQAM:GaStep>
+  <GQAM:GaStep xmi:id="_4ujbgESlEfG5IfPuLrm8vg" base_NamedElement="_3uY_AESlEfG5IfPuLrm8vg" rep="(value=10)" prob="(expr=$pb)">
+    <hostDemand>(value= 2, unit=ms, statQ=min, source=est)</hostDemand>
+  </GQAM:GaStep>
+  <GQAM:GaStep xmi:id="__1Q_gESlEfG5IfPuLrm8vg" base_NamedElement="_6JLmcESlEfG5IfPuLrm8vg" base_Action="_6JLmcESlEfG5IfPuLrm8vg" rep="(value=10)">
+    <hostDemand>(value= 2, unit=ms, statQ=min, source=est)</hostDemand>
+  </GQAM:GaStep>
+  <GQAM:GaStep xmi:id="_GI0oQESmEfG5IfPuLrm8vg" base_NamedElement="_Ey1swESmEfG5IfPuLrm8vg" rep="(value=10)">
+    <hostDemand>(value= 2, unit=ms, statQ=min, source=est)</hostDemand>
+  </GQAM:GaStep>
+  <GQAM:GaScenario xmi:id="_iftlUESmEfG5IfPuLrm8vg" base_NamedElement="_Z14qwESQEfG5IfPuLrm8vg" usedResources="_OAeOMEMrEfGwOovsXalXrA _PAuxUEMrEfGwOovsXalXrA" base_Behavior="_Z14qwESQEfG5IfPuLrm8vg">
+    <throughput>(expr=$X,unit=Hz,source=calc)</throughput>
+    <respT>(expr=$rt, unit=s, statQ=mean, source=calc)</respT>
+    <respT>New String</respT>
+  </GQAM:GaScenario>
+  <GQAM:GaAnalysisContext xmi:id="_ifwooESmEfG5IfPuLrm8vg" base_StructuredClassifier="_Z14qwESQEfG5IfPuLrm8vg" base_NamedElement="_Z14qwESQEfG5IfPuLrm8vg">
+    <context>in$pb = 0.8</context>
+    <context>out$rt</context>
+    <context>out$X</context>
+    <context>out$U</context>
+    <context>int$nJobs = 5</context>
+  </GQAM:GaAnalysisContext>
+  <GQAM:GaStep xmi:id="_XNJ2gESnEfG5IfPuLrm8vg" base_NamedElement="_V8UgwESnEfG5IfPuLrm8vg" rep="(value=10)">
+    <hostDemand>(value= 2, unit=ms, statQ=min, source=est)</hostDemand>
+  </GQAM:GaStep>
+  <GQAM:GaStep xmi:id="_f-VYQESnEfG5IfPuLrm8vg" base_NamedElement="_THjTEESnEfG5IfPuLrm8vg" rep="(value=10)" prob="(expr=1-$pb)">
+    <hostDemand>(value= 2, unit=ms, statQ=min, source=est)</hostDemand>
+  </GQAM:GaStep>
+  <GQAM:GaStep xmi:id="_i8dWQESnEfG5IfPuLrm8vg" base_NamedElement="_h8DpMESnEfG5IfPuLrm8vg" rep="(value=10)" prob="(expr=$pb)">
+    <hostDemand>(value= 2, unit=ms, statQ=min, source=est)</hostDemand>
+  </GQAM:GaStep>
+  <GQAM:GaStep xmi:id="_odTIoESnEfG5IfPuLrm8vg" base_NamedElement="_mFKMkESnEfG5IfPuLrm8vg" rep="(value=10)">
+    <hostDemand>(value= 2, unit=ms, statQ=min, source=est)</hostDemand>
+  </GQAM:GaStep>
+  <GQAM:GaStep xmi:id="_pvDEYESnEfG5IfPuLrm8vg" base_NamedElement="_afJLsESnEfG5IfPuLrm8vg" base_Action="_afJLsESnEfG5IfPuLrm8vg" rep="(value=10)">
+    <hostDemand>(value= 2, unit=ms, statQ=min, source=est)</hostDemand>
+  </GQAM:GaStep>
+  <PAM:PaLogicalResource xmi:id="_j9UcsESvEfG5IfPuLrm8vg" base_Classifier="_t1UagEMYEfGUsvfU6if9iw" poolSize="(value=50, source=est)"/>
+  <GQAM:GaStep xmi:id="_IHAAoESwEfG5IfPuLrm8vg" base_NamedElement="_SN4AcESkEfG5IfPuLrm8vg" rep="(value=10)" prob="(expr=$pb)">
+    <hostDemand>(value= 2, unit=ms, statQ=min, source=est)</hostDemand>
+  </GQAM:GaStep>
+  <GQAM:GaStep xmi:id="_VYBf4ESyEfG5IfPuLrm8vg" base_NamedElement="_kPd9oESkEfG5IfPuLrm8vg" base_Action="_kPd9oESkEfG5IfPuLrm8vg" rep="(value=10)">
+    <hostDemand>(value= 2, unit=ms, statQ=min, source=est)</hostDemand>
+  </GQAM:GaStep>
+  <GQAM:GaStep xmi:id="_ddlRwESyEfG5IfPuLrm8vg" base_NamedElement="_QBqa0ESUEfG5IfPuLrm8vg"/>
 </xmi:XMI>
