@@ -102,6 +102,14 @@
           <element xsi:nil="true"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TgNtkkYOEfGJzLEwe25cEw" x="235" y="18"/>
         </children>
+        <children xmi:type="notation:Shape" xmi:id="_otUnw0YSEfGJzLEwe25cEw" type="StereotypeComment">
+          <styles xmi:type="notation:TitleStyle" xmi:id="_otUnxEYSEfGJzLEwe25cEw"/>
+          <styles xmi:type="notation:EObjectValueStyle" xmi:id="_otV10EYSEfGJzLEwe25cEw" name="BASE_ELEMENT">
+            <eObjectValue xmi:type="uml:Artifact" href="Project.uml#_uO7NUEMYEfGUsvfU6if9iw"/>
+          </styles>
+          <element xsi:nil="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_otUnxUYSEfGJzLEwe25cEw" x="235" y="138"/>
+        </children>
         <styles xmi:type="notation:TitleStyle" xmi:id="_YXV2BEMYEfGUsvfU6if9iw"/>
         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_YXV2BUMYEfGUsvfU6if9iw"/>
       </children>
@@ -122,6 +130,14 @@
           </children>
           <element xmi:type="uml:Artifact" href="Project.uml#_7xqZkEMYEfGUsvfU6if9iw"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7xyVYUMYEfGUsvfU6if9iw" x="24" y="18"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_iUIRE0YSEfGJzLEwe25cEw" type="StereotypeComment">
+          <styles xmi:type="notation:TitleStyle" xmi:id="_iUIRFEYSEfGJzLEwe25cEw"/>
+          <styles xmi:type="notation:EObjectValueStyle" xmi:id="_iUIRFkYSEfGJzLEwe25cEw" name="BASE_ELEMENT">
+            <eObjectValue xmi:type="uml:Artifact" href="Project.uml#_7xqZkEMYEfGUsvfU6if9iw"/>
+          </styles>
+          <element xsi:nil="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_iUIRFUYSEfGJzLEwe25cEw" x="224" y="18"/>
         </children>
         <styles xmi:type="notation:TitleStyle" xmi:id="_YqSAJUMYEfGUsvfU6if9iw"/>
         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_YqSAJkMYEfGUsvfU6if9iw"/>
@@ -309,6 +325,26 @@
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_CFOgskYSEfGJzLEwe25cEw" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_CFOgs0YSEfGJzLEwe25cEw"/>
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_CFPusEYSEfGJzLEwe25cEw"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_iUIRF0YSEfGJzLEwe25cEw" type="StereotypeCommentLink" source="_7xyVYEMYEfGUsvfU6if9iw" target="_iUIRE0YSEfGJzLEwe25cEw">
+      <styles xmi:type="notation:FontStyle" xmi:id="_iUIRGEYSEfGJzLEwe25cEw"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_iUIRHEYSEfGJzLEwe25cEw" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:Artifact" href="Project.uml#_7xqZkEMYEfGUsvfU6if9iw"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_iUIRGUYSEfGJzLEwe25cEw" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_iUIRGkYSEfGJzLEwe25cEw"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_iUIRG0YSEfGJzLEwe25cEw"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_otV10UYSEfGJzLEwe25cEw" type="StereotypeCommentLink" source="_uO-QoEMYEfGUsvfU6if9iw" target="_otUnw0YSEfGJzLEwe25cEw">
+      <styles xmi:type="notation:FontStyle" xmi:id="_otV10kYSEfGJzLEwe25cEw"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_otV11kYSEfGJzLEwe25cEw" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:Artifact" href="Project.uml#_uO7NUEMYEfGUsvfU6if9iw"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_otV100YSEfGJzLEwe25cEw" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_otV11EYSEfGJzLEwe25cEw"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_otV11UYSEfGJzLEwe25cEw"/>
     </edges>
   </notation:Diagram>
   <notation:Diagram xmi:id="_z9tXMEPrEfG2RO62M5NOmg" type="PapyrusUMLActivityDiagram" name="ActivityDiagram1" measurementUnit="Pixel">

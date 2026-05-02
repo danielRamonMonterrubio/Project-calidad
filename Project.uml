@@ -395,4 +395,6 @@
   <GQAM:GaExecHost xmi:id="_6n3-MEYREfGJzLEwe25cEw" resMult="(N, est)" base_Classifier="_YIBnoEMYEfGUsvfU6if9iw"/>
   <GQAM:GaExecHost xmi:id="_AcH0wEYSEfGJzLEwe25cEw" resMult="(1, est)" base_Classifier="_YXUA0EMYEfGUsvfU6if9iw"/>
   <GQAM:GaExecHost xmi:id="_CE1fAEYSEfGJzLEwe25cEw" resMult="(1, est)" base_Classifier="_YqSAIEMYEfGUsvfU6if9iw"/>
+  <PAM:PaLogicalResource xmi:id="_iTySwEYSEfGJzLEwe25cEw" base_Classifier="_7xqZkEMYEfGUsvfU6if9iw" poolSize="(value=50, source=est)"/>
+  <PAM:PaLogicalResource xmi:id="_os5w8EYSEfGJzLEwe25cEw" base_Classifier="_uO7NUEMYEfGUsvfU6if9iw" poolSize="(value=20-50, source=est)"/>
 </xmi:XMI>
