@@ -294,22 +294,6 @@
       <appliedProfile xmi:type="uml:Profile" href="pathmap://Papyrus_PROFILES/MARTE.profile.uml#_jg_Z8PfhEd-f4r3MXmUB9g"/>
     </profileApplication>
   </uml:Model>
-  <GQAM:GaExecHost xmi:id="_KuITsEMrEfGwOovsXalXrA" base_Classifier="_X5uF4EMYEfGUsvfU6if9iw" memSize="256 MB">
-    <utilization>0.1</utilization>
-    <throughput>null</throughput>
-  </GQAM:GaExecHost>
-  <GQAM:GaExecHost xmi:id="_L2pa8EMrEfGwOovsXalXrA" base_Classifier="_YIBnoEMYEfGUsvfU6if9iw">
-    <utilization>0.1</utilization>
-    <throughput>null</throughput>
-  </GQAM:GaExecHost>
-  <GQAM:GaExecHost xmi:id="_OAeOMEMrEfGwOovsXalXrA" base_Classifier="_YqSAIEMYEfGUsvfU6if9iw" memSize="1024 MB">
-    <utilization>0.3</utilization>
-    <throughput>200 querys/s</throughput>
-  </GQAM:GaExecHost>
-  <GQAM:GaExecHost xmi:id="_PAuxUEMrEfGwOovsXalXrA" base_Classifier="_YXUA0EMYEfGUsvfU6if9iw" memSize="2048 MB">
-    <utilization>0.4</utilization>
-    <throughput>500 req/s</throughput>
-  </GQAM:GaExecHost>
   <GQAM:GaWorkloadEvent xmi:id="_kAldEEP0EfG2RO62M5NOmg" pattern="(closed, population=50)" base_NamedElement="_pgktIEPvEfG2RO62M5NOmg"/>
   <GQAM:GaStep xmi:id="_zFAegEP0EfG2RO62M5NOmg" base_NamedElement="_uk5QsEPxEfG2RO62M5NOmg" base_Action="_uk5QsEPxEfG2RO62M5NOmg">
     <execTime>(mean=15, unit=ms)</execTime>
@@ -372,7 +356,7 @@
   <GQAM:GaStep xmi:id="_GI0oQESmEfG5IfPuLrm8vg" base_NamedElement="_Ey1swESmEfG5IfPuLrm8vg" rep="(value=10)">
     <hostDemand>(value= 2, unit=ms, statQ=min, source=est)</hostDemand>
   </GQAM:GaStep>
-  <GQAM:GaScenario xmi:id="_iftlUESmEfG5IfPuLrm8vg" base_NamedElement="_Z14qwESQEfG5IfPuLrm8vg" usedResources="_OAeOMEMrEfGwOovsXalXrA _PAuxUEMrEfGwOovsXalXrA" base_Behavior="_Z14qwESQEfG5IfPuLrm8vg">
+  <GQAM:GaScenario xmi:id="_iftlUESmEfG5IfPuLrm8vg" base_NamedElement="_Z14qwESQEfG5IfPuLrm8vg" base_Behavior="_Z14qwESQEfG5IfPuLrm8vg">
     <throughput>(expr=$X,unit=Hz,source=calc)</throughput>
     <respT>(expr=$rt, unit=s, statQ=mean, source=calc)</respT>
     <respT>New String</respT>
@@ -407,4 +391,8 @@
     <hostDemand>(value= 2, unit=ms, statQ=min, source=est)</hostDemand>
   </GQAM:GaStep>
   <GQAM:GaStep xmi:id="_ddlRwESyEfG5IfPuLrm8vg" base_NamedElement="_QBqa0ESUEfG5IfPuLrm8vg"/>
+  <GQAM:GaExecHost xmi:id="_WVslkEYREfGJzLEwe25cEw" resMult="(1, est)" base_Classifier="_X5uF4EMYEfGUsvfU6if9iw"/>
+  <GQAM:GaExecHost xmi:id="_6n3-MEYREfGJzLEwe25cEw" resMult="(N, est)" base_Classifier="_YIBnoEMYEfGUsvfU6if9iw"/>
+  <GQAM:GaExecHost xmi:id="_AcH0wEYSEfGJzLEwe25cEw" resMult="(1, est)" base_Classifier="_YXUA0EMYEfGUsvfU6if9iw"/>
+  <GQAM:GaExecHost xmi:id="_CE1fAEYSEfGJzLEwe25cEw" resMult="(1, est)" base_Classifier="_YqSAIEMYEfGUsvfU6if9iw"/>
 </xmi:XMI>
