@@ -1,0 +1,73 @@
+strict digraph {
+	graph [ pad="1.3", ranksep="1.3", nodesep="1.3" ];
+	overlap=scale;
+	splines=true;
+	rankdir="LR";
+	
+	node [ fixedsize=true ];
+	    
+    subgraph "places" {
+        node [ label="", shape=circle, width=1.3 ]
+		"_-c0TAEZfEfGMLJDeICAGhw" [ label="Validar_Credenciales",  ];
+		"_-czr8UZfEfGMLJDeICAGhw" [ label="FinishConsulta",  ];
+		"_-cxPsEZfEfGMLJDeICAGhw" [ label="MergeNode22",  ];
+		"_-c6ZokZfEfGMLJDeICAGhw" [ label="Insertar_Reserva_BD",  ];
+		"_-deaUEZfEfGMLJDeICAGhw" [ label="Users",  ];
+		"_-c7AsUZfEfGMLJDeICAGhw" [ label="Confirmar_Creacion",  ];
+		"_-czE4EZfEfGMLJDeICAGhw" [ label="Comprobar_Policies",  ];
+		"_-c5ykEZfEfGMLJDeICAGhw" [ label="Consultar_BD",  ];
+		"_-c7AsEZfEfGMLJDeICAGhw" [ label="DecisionNode31",  ];
+		"_-c8O0UZfEfGMLJDeICAGhw" [ label="Comprobar_Disponibilidad",  ];
+		"_-c7AtEZfEfGMLJDeICAGhw" [ label="Crear_Reserva",  ];
+		"_-czE40ZfEfGMLJDeICAGhw" [ label="Crear_Reserva",  ];
+		"_-c7nwkZfEfGMLJDeICAGhw" [ label="Mostrar_Error",  ];
+		"_-cwooEZfEfGMLJDeICAGhw" [ label="",  ];
+		"_-c7nwUZfEfGMLJDeICAGhw" [ label="",  ];
+    }
+    
+    subgraph "immediate" {
+    	node [ label="", color=black, shape=box, width=0.2, height=1.3, style=filled ];
+    }
+
+    subgraph "timed" {
+    	node [ label="", shape=box, width=0.2, height=1.3 ];
+    }
+
+	"_-dNUkUZfEfGMLJDeICAGhw" -> "_-czr8UZfEfGMLJDeICAGhw";
+	"_-czE4EZfEfGMLJDeICAGhw" -> "_-czE4UZfEfGMLJDeICAGhw";
+	"_-czE4UZfEfGMLJDeICAGhw" -> "_-c7nwUZfEfGMLJDeICAGhw";
+	"_-c5ykEZfEfGMLJDeICAGhw" -> "_-c6ZoEZfEfGMLJDeICAGhw";
+	"_-czr8UZfEfGMLJDeICAGhw" -> "_-czr8kZfEfGMLJDeICAGhw";
+	"_-c7nw0ZfEfGMLJDeICAGhw" -> "_-czr8UZfEfGMLJDeICAGhw";
+	"_-dJDIUZfEfGMLJDeICAGhw" -> "_-c8O0UZfEfGMLJDeICAGhw";
+	"_-cxPsUZfEfGMLJDeICAGhw" -> "_-c7nwkZfEfGMLJDeICAGhw";
+	"_-dTbNEZfEfGMLJDeICAGhw" -> "_-c7AtEZfEfGMLJDeICAGhw";
+	"_-c8O0UZfEfGMLJDeICAGhw" -> "_-c8O0kZfEfGMLJDeICAGhw";
+	"_-c8O0kZfEfGMLJDeICAGhw" -> "_-c5ykEZfEfGMLJDeICAGhw";
+	"_-c0TAUZfEfGMLJDeICAGhw" -> "_-cwooEZfEfGMLJDeICAGhw";
+	"_-cxPsUZfEfGMLJDeICAGhw" -> "_-czE40ZfEfGMLJDeICAGhw";
+	"_-c6ZokZfEfGMLJDeICAGhw" -> "_-c6Zo0ZfEfGMLJDeICAGhw";
+	"_-c-EAUZfEfGMLJDeICAGhw" -> "_-c7nwkZfEfGMLJDeICAGhw";
+	"_-c7AsUZfEfGMLJDeICAGhw" -> "_-c7AskZfEfGMLJDeICAGhw";
+	"_-dPw0kZfEfGMLJDeICAGhw" -> "_-czr8UZfEfGMLJDeICAGhw";
+	"_-dV3cUZfEfGMLJDeICAGhw" -> "_-c7AsUZfEfGMLJDeICAGhw";
+	"_-czE40ZfEfGMLJDeICAGhw" -> "_-czE5EZfEfGMLJDeICAGhw";
+	"_-c6ZoEZfEfGMLJDeICAGhw" -> "_-cxPsEZfEfGMLJDeICAGhw";
+	"_-czE5EZfEfGMLJDeICAGhw" -> "_-c6ZokZfEfGMLJDeICAGhw";
+	"_-cwooEZfEfGMLJDeICAGhw" -> "_-dTbNEZfEfGMLJDeICAGhw";
+	"_-c39YUZfEfGMLJDeICAGhw" -> "_-c0TAEZfEfGMLJDeICAGhw";
+	"_-c7nwUZfEfGMLJDeICAGhw" -> "_-dNUkUZfEfGMLJDeICAGhw";
+	"_-c0TAEZfEfGMLJDeICAGhw" -> "_-c0TAUZfEfGMLJDeICAGhw";
+	"_-cxPsEZfEfGMLJDeICAGhw" -> "_-cxPsUZfEfGMLJDeICAGhw";
+	"_-deaUEZfEfGMLJDeICAGhw" -> "_-czr8kZfEfGMLJDeICAGhw";
+	"_-c7nwUZfEfGMLJDeICAGhw" -> "_-dJDIUZfEfGMLJDeICAGhw";
+	"_-c7nwkZfEfGMLJDeICAGhw" -> "_-c7nw0ZfEfGMLJDeICAGhw";
+	"_-c6Zo0ZfEfGMLJDeICAGhw" -> "_-c7AsEZfEfGMLJDeICAGhw";
+	"_-c7AskZfEfGMLJDeICAGhw" -> "_-czr8UZfEfGMLJDeICAGhw";
+	"_-cwooEZfEfGMLJDeICAGhw" -> "_-dPw0kZfEfGMLJDeICAGhw";
+	"_-c39YUZfEfGMLJDeICAGhw" -> "_-deaUEZfEfGMLJDeICAGhw";
+	"_-c7AtEZfEfGMLJDeICAGhw" -> "_-c7AtUZfEfGMLJDeICAGhw";
+	"_-c7AsEZfEfGMLJDeICAGhw" -> "_-c-EAUZfEfGMLJDeICAGhw";
+	"_-c7AsEZfEfGMLJDeICAGhw" -> "_-dV3cUZfEfGMLJDeICAGhw";
+	"_-c7AtUZfEfGMLJDeICAGhw" -> "_-czE4EZfEfGMLJDeICAGhw";
+}

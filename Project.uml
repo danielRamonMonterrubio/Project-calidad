@@ -307,7 +307,7 @@
   <GQAM:GaStep xmi:id="_kdHgsEP3EfG2RO62M5NOmg" base_NamedElement="_6kRMwEPxEfG2RO62M5NOmg" base_Action="_6kRMwEPxEfG2RO62M5NOmg">
     <execTime>(mean=30, unit=ms)</execTime>
   </GQAM:GaStep>
-  <GQAM:GaWorkloadEvent xmi:id="_Zr9V4ESUEfG5IfPuLrm8vg" pattern="(open=(arrivalRate=(2,Hz,mean,est)))" base_NamedElement="_XEMpcESUEfG5IfPuLrm8vg"/>
+  <GQAM:GaWorkloadEvent xmi:id="_Zr9V4ESUEfG5IfPuLrm8vg" pattern="open=(arrivalRate=(expr=2,unit=Hz,statQ=mean,source=est))" base_NamedElement="_XEMpcESUEfG5IfPuLrm8vg"/>
   <GQAM:GaStep xmi:id="_hBwIoESdEfG5IfPuLrm8vg" base_NamedElement="_b3XHYESdEfG5IfPuLrm8vg" base_Action="_b3XHYESdEfG5IfPuLrm8vg" rep="(value=10)">
     <hostDemand>(value= 2, unit=ms, statQ=min, source=est)</hostDemand>
   </GQAM:GaStep>
@@ -359,7 +359,7 @@
   <GQAM:GaScenario xmi:id="_iftlUESmEfG5IfPuLrm8vg" base_NamedElement="_Z14qwESQEfG5IfPuLrm8vg" base_Behavior="_Z14qwESQEfG5IfPuLrm8vg">
     <throughput>(expr=$X,unit=Hz,source=calc)</throughput>
     <respT>(expr=$rt, unit=s, statQ=mean, source=calc)</respT>
-    <respT>New String</respT>
+    <respT></respT>
   </GQAM:GaScenario>
   <GQAM:GaAnalysisContext xmi:id="_ifwooESmEfG5IfPuLrm8vg" base_StructuredClassifier="_Z14qwESQEfG5IfPuLrm8vg" base_NamedElement="_Z14qwESQEfG5IfPuLrm8vg">
     <context>in$pb = 0.8</context>
