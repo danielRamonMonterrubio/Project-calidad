@@ -344,7 +344,7 @@
   <GQAM:GaStep xmi:id="_kdHgsEP3EfG2RO62M5NOmg" base_NamedElement="_6kRMwEPxEfG2RO62M5NOmg" base_Action="_6kRMwEPxEfG2RO62M5NOmg">
     <execTime>(mean=30, unit=ms)</execTime>
   </GQAM:GaStep>
-  <GQAM:GaWorkloadEvent xmi:id="_Zr9V4ESUEfG5IfPuLrm8vg" pattern="open=(arrivalRate=(expr=2,unit=Hz,statQ=mean,source=est))" base_NamedElement="_XEMpcESUEfG5IfPuLrm8vg"/>
+  <GQAM:GaWorkloadEvent xmi:id="_Zr9V4ESUEfG5IfPuLrm8vg" pattern="open=(arrivalRate=(expr=$lambda,unit=Hz,statQ=mean,source=est))" base_NamedElement="_XEMpcESUEfG5IfPuLrm8vg"/>
   <GQAM:GaStep xmi:id="_hBwIoESdEfG5IfPuLrm8vg" base_NamedElement="_b3XHYESdEfG5IfPuLrm8vg" base_Action="_b3XHYESdEfG5IfPuLrm8vg" rep="(value=10)">
     <hostDemand>(value= 2, unit=ms, statQ=min, source=est)</hostDemand>
   </GQAM:GaStep>
@@ -403,7 +403,7 @@
     <context>out$rt</context>
     <context>out$X</context>
     <context>out$U</context>
-    <context>int$nJobs = 5</context>
+    <context>in$lambda</context>
   </GQAM:GaAnalysisContext>
   <GQAM:GaStep xmi:id="_XNJ2gESnEfG5IfPuLrm8vg" base_NamedElement="_V8UgwESnEfG5IfPuLrm8vg" rep="(value=10)">
     <hostDemand>(value= 2, unit=ms, statQ=min, source=est)</hostDemand>
@@ -427,7 +427,6 @@
   <GQAM:GaStep xmi:id="_VYBf4ESyEfG5IfPuLrm8vg" base_NamedElement="_kPd9oESkEfG5IfPuLrm8vg" base_Action="_kPd9oESkEfG5IfPuLrm8vg" rep="(value=10)">
     <hostDemand>(value= 2, unit=ms, statQ=min, source=est)</hostDemand>
   </GQAM:GaStep>
-  <GQAM:GaStep xmi:id="_ddlRwESyEfG5IfPuLrm8vg" base_NamedElement="_QBqa0ESUEfG5IfPuLrm8vg"/>
   <GQAM:GaExecHost xmi:id="_WVslkEYREfGJzLEwe25cEw" resMult="(1, est)" base_Classifier="_X5uF4EMYEfGUsvfU6if9iw"/>
   <GQAM:GaExecHost xmi:id="_6n3-MEYREfGJzLEwe25cEw" resMult="(N, est)" base_Classifier="_YIBnoEMYEfGUsvfU6if9iw"/>
   <GQAM:GaExecHost xmi:id="_AcH0wEYSEfGJzLEwe25cEw" resMult="(1, est)" base_Classifier="_YXUA0EMYEfGUsvfU6if9iw"/>
