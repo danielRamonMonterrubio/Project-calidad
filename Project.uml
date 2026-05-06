@@ -89,42 +89,38 @@
       <node xmi:type="uml:CreateObjectAction" xmi:id="_afJLsESnEfG5IfPuLrm8vg" name="Confirmar_Creacion" incoming="_h8DpMESnEfG5IfPuLrm8vg" outgoing="_mFKMkESnEfG5IfPuLrm8vg" inPartition="_M0LyMESUEfG5IfPuLrm8vg"/>
       <node xmi:type="uml:DecisionNode" xmi:id="_ly0-4ElnEfGlM9xeY4vQvg" incoming="_vLxrQElnEfGlM9xeY4vQvg" outgoing="_rAsx8ElnEfGlM9xeY4vQvg _x3XHwElnEfGlM9xeY4vQvg" inPartition="_QBqa0ESUEfG5IfPuLrm8vg"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Activity" xmi:id="_YvaR4EklEfGog-0ndxrIVw" name="Activity49" node="_ykqtwEknEfGog-0ndxrIVw _9EHIIEknEfGog-0ndxrIVw _K-CFUEkoEfGog-0ndxrIVw _vCt0gEkoEfGog-0ndxrIVw _KN4lUEkpEfGog-0ndxrIVw _Nnj24EkpEfGog-0ndxrIVw _d6U6wEkpEfGog-0ndxrIVw _9S1YQEk1EfGog-0ndxrIVw _vtwNMEk2EfGog-0ndxrIVw _8Y0KkEk2EfGog-0ndxrIVw _K1blIEk3EfGog-0ndxrIVw _PqzYoEk3EfGog-0ndxrIVw _XErJMEk3EfGog-0ndxrIVw" group="_ndj2cEknEfGog-0ndxrIVw _oPgQwEknEfGog-0ndxrIVw _u-_AgEknEfGog-0ndxrIVw">
-      <edge xmi:type="uml:ControlFlow" xmi:id="_GynNwEkoEfGog-0ndxrIVw" target="_9EHIIEknEfGog-0ndxrIVw" source="_ykqtwEknEfGog-0ndxrIVw"/>
-      <edge xmi:type="uml:ControlFlow" xmi:id="_fkRJgEkoEfGog-0ndxrIVw" inPartition="_oPgQwEknEfGog-0ndxrIVw" target="_K-CFUEkoEfGog-0ndxrIVw" source="_9EHIIEknEfGog-0ndxrIVw"/>
-      <edge xmi:type="uml:ControlFlow" xmi:id="_zfwAgEkoEfGog-0ndxrIVw" name="OK" target="_vCt0gEkoEfGog-0ndxrIVw" source="_K-CFUEkoEfGog-0ndxrIVw"/>
-      <edge xmi:type="uml:ControlFlow" xmi:id="_Q8w4IEkpEfGog-0ndxrIVw" inPartition="_oPgQwEknEfGog-0ndxrIVw" target="_Nnj24EkpEfGog-0ndxrIVw" source="_KN4lUEkpEfGog-0ndxrIVw"/>
-      <edge xmi:type="uml:ControlFlow" xmi:id="_7uMAkEkzEfGog-0ndxrIVw" target="_KN4lUEkpEfGog-0ndxrIVw" source="_vCt0gEkoEfGog-0ndxrIVw"/>
-      <edge xmi:type="uml:ControlFlow" xmi:id="_j9pRoEk1EfGog-0ndxrIVw" name="ERROR" target="_vCt0gEkoEfGog-0ndxrIVw" source="_Nnj24EkpEfGog-0ndxrIVw"/>
-      <edge xmi:type="uml:ControlFlow" xmi:id="_0r9CAEk1EfGog-0ndxrIVw" name="OK" inPartition="_oPgQwEknEfGog-0ndxrIVw" target="_d6U6wEkpEfGog-0ndxrIVw" source="_Nnj24EkpEfGog-0ndxrIVw"/>
-      <edge xmi:type="uml:ControlFlow" xmi:id="_BjxpAEk2EfGog-0ndxrIVw" target="_9S1YQEk1EfGog-0ndxrIVw" source="_d6U6wEkpEfGog-0ndxrIVw"/>
-      <edge xmi:type="uml:ControlFlow" xmi:id="_xvliEEk2EfGog-0ndxrIVw" target="_vtwNMEk2EfGog-0ndxrIVw" source="_9S1YQEk1EfGog-0ndxrIVw"/>
-      <edge xmi:type="uml:ControlFlow" xmi:id="_-RqikEk2EfGog-0ndxrIVw" name="ERROR" target="_8Y0KkEk2EfGog-0ndxrIVw" source="_vtwNMEk2EfGog-0ndxrIVw"/>
-      <edge xmi:type="uml:ControlFlow" xmi:id="_C25BQEk3EfGog-0ndxrIVw" inPartition="_ndj2cEknEfGog-0ndxrIVw" target="_vCt0gEkoEfGog-0ndxrIVw" source="_8Y0KkEk2EfGog-0ndxrIVw"/>
-      <edge xmi:type="uml:ControlFlow" xmi:id="_ZDtBsEk3EfGog-0ndxrIVw" name="OK" inPartition="_oPgQwEknEfGog-0ndxrIVw" target="_XErJMEk3EfGog-0ndxrIVw" source="_vtwNMEk2EfGog-0ndxrIVw"/>
-      <edge xmi:type="uml:ControlFlow" xmi:id="_aJovAEk3EfGog-0ndxrIVw" target="_K1blIEk3EfGog-0ndxrIVw" source="_XErJMEk3EfGog-0ndxrIVw"/>
-      <edge xmi:type="uml:ControlFlow" xmi:id="_chxEAEk3EfGog-0ndxrIVw" inPartition="_ndj2cEknEfGog-0ndxrIVw" target="_PqzYoEk3EfGog-0ndxrIVw" source="_K1blIEk3EfGog-0ndxrIVw"/>
-      <edge xmi:type="uml:ControlFlow" xmi:id="_lZb9YEk5EfGog-0ndxrIVw" name="ERROR" target="_PqzYoEk3EfGog-0ndxrIVw" source="_K-CFUEkoEfGog-0ndxrIVw"/>
-      <group xmi:type="uml:ActivityPartition" xmi:id="_ndj2cEknEfGog-0ndxrIVw" name="Frontend" node="_vCt0gEkoEfGog-0ndxrIVw _8Y0KkEk2EfGog-0ndxrIVw _K1blIEk3EfGog-0ndxrIVw _PqzYoEk3EfGog-0ndxrIVw" edge="_C25BQEk3EfGog-0ndxrIVw _chxEAEk3EfGog-0ndxrIVw"/>
-      <group xmi:type="uml:ActivityPartition" xmi:id="_oPgQwEknEfGog-0ndxrIVw" name="Backend" node="_9EHIIEknEfGog-0ndxrIVw _K-CFUEkoEfGog-0ndxrIVw _KN4lUEkpEfGog-0ndxrIVw _Nnj24EkpEfGog-0ndxrIVw _d6U6wEkpEfGog-0ndxrIVw _vtwNMEk2EfGog-0ndxrIVw _XErJMEk3EfGog-0ndxrIVw" edge="_fkRJgEkoEfGog-0ndxrIVw _Q8w4IEkpEfGog-0ndxrIVw _0r9CAEk1EfGog-0ndxrIVw _ZDtBsEk3EfGog-0ndxrIVw"/>
-      <group xmi:type="uml:ActivityPartition" xmi:id="_u-_AgEknEfGog-0ndxrIVw" name="BBDD" node="_9S1YQEk1EfGog-0ndxrIVw"/>
-      <node xmi:type="uml:InitialNode" xmi:id="_ykqtwEknEfGog-0ndxrIVw" name="" outgoing="_GynNwEkoEfGog-0ndxrIVw"/>
-      <node xmi:type="uml:CreateObjectAction" xmi:id="_9EHIIEknEfGog-0ndxrIVw" name="Validar_Credenciales" incoming="_GynNwEkoEfGog-0ndxrIVw" outgoing="_fkRJgEkoEfGog-0ndxrIVw" inPartition="_oPgQwEknEfGog-0ndxrIVw">
-        <handler xmi:type="uml:ExceptionHandler" xmi:id="_FPjfkEkoEfGog-0ndxrIVw"/>
-        <handler xmi:type="uml:ExceptionHandler" xmi:id="_Fj3isEkoEfGog-0ndxrIVw"/>
-        <handler xmi:type="uml:ExceptionHandler" xmi:id="_GMVQ4EkoEfGog-0ndxrIVw"/>
-      </node>
-      <node xmi:type="uml:DecisionNode" xmi:id="_K-CFUEkoEfGog-0ndxrIVw" incoming="_fkRJgEkoEfGog-0ndxrIVw" outgoing="_zfwAgEkoEfGog-0ndxrIVw _lZb9YEk5EfGog-0ndxrIVw" inPartition="_oPgQwEknEfGog-0ndxrIVw"/>
-      <node xmi:type="uml:CreateObjectAction" xmi:id="_vCt0gEkoEfGog-0ndxrIVw" name="Consultar_Reservas" incoming="_zfwAgEkoEfGog-0ndxrIVw _j9pRoEk1EfGog-0ndxrIVw _C25BQEk3EfGog-0ndxrIVw" outgoing="_7uMAkEkzEfGog-0ndxrIVw" inPartition="_ndj2cEknEfGog-0ndxrIVw"/>
-      <node xmi:type="uml:CreateObjectAction" xmi:id="_KN4lUEkpEfGog-0ndxrIVw" name="Es_Dia_Valido" incoming="_7uMAkEkzEfGog-0ndxrIVw" outgoing="_Q8w4IEkpEfGog-0ndxrIVw" inPartition="_oPgQwEknEfGog-0ndxrIVw"/>
-      <node xmi:type="uml:DecisionNode" xmi:id="_Nnj24EkpEfGog-0ndxrIVw" incoming="_Q8w4IEkpEfGog-0ndxrIVw" outgoing="_j9pRoEk1EfGog-0ndxrIVw _0r9CAEk1EfGog-0ndxrIVw" inPartition="_oPgQwEknEfGog-0ndxrIVw"/>
-      <node xmi:type="uml:CreateObjectAction" xmi:id="_d6U6wEkpEfGog-0ndxrIVw" name="Reservas_Dia" incoming="_0r9CAEk1EfGog-0ndxrIVw" outgoing="_BjxpAEk2EfGog-0ndxrIVw" inPartition="_oPgQwEknEfGog-0ndxrIVw"/>
-      <node xmi:type="uml:CreateObjectAction" xmi:id="_9S1YQEk1EfGog-0ndxrIVw" name="Consultar_Reservas_Día_BD" incoming="_BjxpAEk2EfGog-0ndxrIVw" outgoing="_xvliEEk2EfGog-0ndxrIVw" inPartition="_u-_AgEknEfGog-0ndxrIVw"/>
-      <node xmi:type="uml:DecisionNode" xmi:id="_vtwNMEk2EfGog-0ndxrIVw" incoming="_xvliEEk2EfGog-0ndxrIVw" outgoing="_-RqikEk2EfGog-0ndxrIVw _ZDtBsEk3EfGog-0ndxrIVw" inPartition="_oPgQwEknEfGog-0ndxrIVw"/>
-      <node xmi:type="uml:CreateObjectAction" xmi:id="_8Y0KkEk2EfGog-0ndxrIVw" name="Mostrar_Error" incoming="_-RqikEk2EfGog-0ndxrIVw" outgoing="_C25BQEk3EfGog-0ndxrIVw" inPartition="_ndj2cEknEfGog-0ndxrIVw"/>
-      <node xmi:type="uml:CreateObjectAction" xmi:id="_K1blIEk3EfGog-0ndxrIVw" name="Mostrar_Confirmacion" incoming="_aJovAEk3EfGog-0ndxrIVw" outgoing="_chxEAEk3EfGog-0ndxrIVw" inPartition="_ndj2cEknEfGog-0ndxrIVw"/>
-      <node xmi:type="uml:ActivityFinalNode" xmi:id="_PqzYoEk3EfGog-0ndxrIVw" name="" incoming="_chxEAEk3EfGog-0ndxrIVw _lZb9YEk5EfGog-0ndxrIVw" inPartition="_ndj2cEknEfGog-0ndxrIVw"/>
-      <node xmi:type="uml:CreateObjectAction" xmi:id="_XErJMEk3EfGog-0ndxrIVw" name="Estructurar_Datos" incoming="_ZDtBsEk3EfGog-0ndxrIVw" outgoing="_aJovAEk3EfGog-0ndxrIVw" inPartition="_oPgQwEknEfGog-0ndxrIVw"/>
+    <packagedElement xmi:type="uml:Activity" xmi:id="_7F09QEl5EfG-xJVFfVsWkA" name="Activity50" node="_LXpl8El6EfG-xJVFfVsWkA _IWMAEEl6EfG-xJVFfVsWkA _HBtgcEl6EfG-xJVFfVsWkA _EgeSwEl6EfG-xJVFfVsWkA _9qLJUEl5EfG-xJVFfVsWkA _y-MyAEl9EfG-xJVFfVsWkA _1iwZcEl9EfG-xJVFfVsWkA _NPOOwEl-EfG-xJVFfVsWkA _77avMEl-EfG-xJVFfVsWkA _mnV4IEl_EfG-xJVFfVsWkA _RLf6QEmCEfG-xJVFfVsWkA _XMrZkEmCEfG-xJVFfVsWkA _FmfpMEmGEfGFF51CVOdtFg" group="_vGq7QEmHEfGFF51CVOdtFg _GW_KoEmJEfGFF51CVOdtFg _32cncEmKEfGFF51CVOdtFg">
+      <edge xmi:type="uml:ControlFlow" xmi:id="_QhNgwEl6EfG-xJVFfVsWkA" target="_1iwZcEl9EfG-xJVFfVsWkA" source="_IWMAEEl6EfG-xJVFfVsWkA"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_RwW0cEl6EfG-xJVFfVsWkA" target="_LXpl8El6EfG-xJVFfVsWkA" source="_HBtgcEl6EfG-xJVFfVsWkA"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_S178cEl6EfG-xJVFfVsWkA" name="OK" target="_IWMAEEl6EfG-xJVFfVsWkA" source="_LXpl8El6EfG-xJVFfVsWkA"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_Tzyr0El6EfG-xJVFfVsWkA" name="ERROR" target="_EgeSwEl6EfG-xJVFfVsWkA" source="_LXpl8El6EfG-xJVFfVsWkA"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_VxyCgEl6EfG-xJVFfVsWkA" target="_HBtgcEl6EfG-xJVFfVsWkA" source="_9qLJUEl5EfG-xJVFfVsWkA"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_J2NrkEl-EfG-xJVFfVsWkA" target="_y-MyAEl9EfG-xJVFfVsWkA" source="_1iwZcEl9EfG-xJVFfVsWkA"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_P3USYEl-EfG-xJVFfVsWkA" name="ERROR" target="_IWMAEEl6EfG-xJVFfVsWkA" source="_y-MyAEl9EfG-xJVFfVsWkA"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_XPCG0El-EfG-xJVFfVsWkA" name="OK" target="_NPOOwEl-EfG-xJVFfVsWkA" source="_y-MyAEl9EfG-xJVFfVsWkA"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="__AyksEl-EfG-xJVFfVsWkA" target="_77avMEl-EfG-xJVFfVsWkA" source="_NPOOwEl-EfG-xJVFfVsWkA"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_omtu4El_EfG-xJVFfVsWkA" target="_mnV4IEl_EfG-xJVFfVsWkA" source="_77avMEl-EfG-xJVFfVsWkA"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_t8yJwEmBEfG-xJVFfVsWkA" name="OK" target="_RLf6QEmCEfG-xJVFfVsWkA" source="_mnV4IEl_EfG-xJVFfVsWkA"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_wTcfIEmBEfG-xJVFfVsWkA" name="ERROR" target="_FmfpMEmGEfGFF51CVOdtFg" source="_mnV4IEl_EfG-xJVFfVsWkA"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_UPYskEmDEfG-xJVFfVsWkA" target="_XMrZkEmCEfG-xJVFfVsWkA" source="_RLf6QEmCEfG-xJVFfVsWkA"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_VoYf0EmDEfG-xJVFfVsWkA" target="_EgeSwEl6EfG-xJVFfVsWkA" source="_XMrZkEmCEfG-xJVFfVsWkA"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_ys7swEmGEfGFF51CVOdtFg" target="_IWMAEEl6EfG-xJVFfVsWkA" source="_FmfpMEmGEfGFF51CVOdtFg"/>
+      <group xmi:type="uml:ActivityPartition" xmi:id="_vGq7QEmHEfGFF51CVOdtFg" name="BBDD" node="_77avMEl-EfG-xJVFfVsWkA _mnV4IEl_EfG-xJVFfVsWkA"/>
+      <group xmi:type="uml:ActivityPartition" xmi:id="_GW_KoEmJEfGFF51CVOdtFg" name="Backend" node="_HBtgcEl6EfG-xJVFfVsWkA _LXpl8El6EfG-xJVFfVsWkA _RLf6QEmCEfG-xJVFfVsWkA _1iwZcEl9EfG-xJVFfVsWkA _NPOOwEl-EfG-xJVFfVsWkA _y-MyAEl9EfG-xJVFfVsWkA"/>
+      <group xmi:type="uml:ActivityPartition" xmi:id="_32cncEmKEfGFF51CVOdtFg" name="Frontend" node="_IWMAEEl6EfG-xJVFfVsWkA _FmfpMEmGEfGFF51CVOdtFg _XMrZkEmCEfG-xJVFfVsWkA"/>
+      <node xmi:type="uml:InitialNode" xmi:id="_9qLJUEl5EfG-xJVFfVsWkA" name="" outgoing="_VxyCgEl6EfG-xJVFfVsWkA"/>
+      <node xmi:type="uml:ActivityFinalNode" xmi:id="_EgeSwEl6EfG-xJVFfVsWkA" name="" incoming="_Tzyr0El6EfG-xJVFfVsWkA _VoYf0EmDEfG-xJVFfVsWkA"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_HBtgcEl6EfG-xJVFfVsWkA" name="Validar_Credenciales" incoming="_VxyCgEl6EfG-xJVFfVsWkA" outgoing="_RwW0cEl6EfG-xJVFfVsWkA" inPartition="_GW_KoEmJEfGFF51CVOdtFg"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_IWMAEEl6EfG-xJVFfVsWkA" name="Consultar_Reservas" incoming="_S178cEl6EfG-xJVFfVsWkA _P3USYEl-EfG-xJVFfVsWkA _ys7swEmGEfGFF51CVOdtFg" outgoing="_QhNgwEl6EfG-xJVFfVsWkA" inPartition="_32cncEmKEfGFF51CVOdtFg"/>
+      <node xmi:type="uml:DecisionNode" xmi:id="_LXpl8El6EfG-xJVFfVsWkA" name="" incoming="_RwW0cEl6EfG-xJVFfVsWkA" outgoing="_S178cEl6EfG-xJVFfVsWkA _Tzyr0El6EfG-xJVFfVsWkA" inPartition="_GW_KoEmJEfGFF51CVOdtFg"/>
+      <node xmi:type="uml:DecisionNode" xmi:id="_y-MyAEl9EfG-xJVFfVsWkA" name="" incoming="_J2NrkEl-EfG-xJVFfVsWkA" outgoing="_P3USYEl-EfG-xJVFfVsWkA _XPCG0El-EfG-xJVFfVsWkA" inPartition="_GW_KoEmJEfGFF51CVOdtFg"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_1iwZcEl9EfG-xJVFfVsWkA" name="Es_Dia_Valido" incoming="_QhNgwEl6EfG-xJVFfVsWkA" outgoing="_J2NrkEl-EfG-xJVFfVsWkA" inPartition="_GW_KoEmJEfGFF51CVOdtFg"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_NPOOwEl-EfG-xJVFfVsWkA" name="Reservas_Dia" incoming="_XPCG0El-EfG-xJVFfVsWkA" outgoing="__AyksEl-EfG-xJVFfVsWkA" inPartition="_GW_KoEmJEfGFF51CVOdtFg"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_77avMEl-EfG-xJVFfVsWkA" name="Consultar_Reservas_Dia_BD" incoming="__AyksEl-EfG-xJVFfVsWkA" outgoing="_omtu4El_EfG-xJVFfVsWkA" inPartition="_vGq7QEmHEfGFF51CVOdtFg"/>
+      <node xmi:type="uml:DecisionNode" xmi:id="_mnV4IEl_EfG-xJVFfVsWkA" name="" incoming="_omtu4El_EfG-xJVFfVsWkA" outgoing="_t8yJwEmBEfG-xJVFfVsWkA _wTcfIEmBEfG-xJVFfVsWkA" inPartition="_vGq7QEmHEfGFF51CVOdtFg"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_RLf6QEmCEfG-xJVFfVsWkA" name="Estructurar_Datos" incoming="_t8yJwEmBEfG-xJVFfVsWkA" outgoing="_UPYskEmDEfG-xJVFfVsWkA" inPartition="_GW_KoEmJEfGFF51CVOdtFg"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_XMrZkEmCEfG-xJVFfVsWkA" name="Mostrar_Reservas" incoming="_UPYskEmDEfG-xJVFfVsWkA" outgoing="_VoYf0EmDEfG-xJVFfVsWkA" inPartition="_32cncEmKEfGFF51CVOdtFg"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_FmfpMEmGEfGFF51CVOdtFg" name="Mostrar_Error" incoming="_wTcfIEmBEfG-xJVFfVsWkA" outgoing="_ys7swEmGEfGFF51CVOdtFg" inPartition="_32cncEmKEfGFF51CVOdtFg"/>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Iq6ewEMrEfGwOovsXalXrA">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_IrJvUEMrEfGwOovsXalXrA" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -415,62 +411,52 @@
   <GQAM:GaExecHost xmi:id="_CE1fAEYSEfGJzLEwe25cEw" resMult="(1, est)" base_Classifier="_YqSAIEMYEfGUsvfU6if9iw"/>
   <PAM:PaLogicalResource xmi:id="_iTySwEYSEfGJzLEwe25cEw" base_Classifier="_7xqZkEMYEfGUsvfU6if9iw" poolSize="(value=50, source=est)"/>
   <PAM:PaLogicalResource xmi:id="_os5w8EYSEfGJzLEwe25cEw" base_Classifier="_uO7NUEMYEfGUsvfU6if9iw" poolSize="(value=20-50, source=est)"/>
-  <GQAM:GaWorkloadEvent xmi:id="_23bjcEknEfGog-0ndxrIVw" pattern="open=(arrivalRate=(expr=$lambda,unit=Hz,statQ=mean,source=est))" base_NamedElement="_ykqtwEknEfGog-0ndxrIVw"/>
-  <GQAM:GaStep xmi:id="_Dk3fYEkoEfGog-0ndxrIVw" base_NamedElement="_9EHIIEknEfGog-0ndxrIVw" base_Action="_9EHIIEknEfGog-0ndxrIVw" rep="(value=10)" prob="" host="_AcH0wEYSEfGJzLEwe25cEw">
-    <hostDemand>(value= 2, unit=ms, statQ=min, source=est)</hostDemand>
-  </GQAM:GaStep>
-  <GQAM:GaScenario xmi:id="_kkPDcEkoEfGog-0ndxrIVw" base_NamedElement="_YvaR4EklEfGog-0ndxrIVw" usedResources="_WVslkEYREfGJzLEwe25cEw _6n3-MEYREfGJzLEwe25cEw _AcH0wEYSEfGJzLEwe25cEw _CE1fAEYSEfGJzLEwe25cEw" base_Behavior="_YvaR4EklEfGog-0ndxrIVw" cause="_23bjcEknEfGog-0ndxrIVw" root="_Dk3fYEkoEfGog-0ndxrIVw">
-    <throughput>(expr=$X,unit=Hz,source=calc)</throughput>
-    <respT>(expr=$rt, unit=ms, statQ=mean, source=calc)</respT>
-  </GQAM:GaScenario>
-  <GQAM:GaAnalysisContext xmi:id="_kkSt0EkoEfGog-0ndxrIVw" base_StructuredClassifier="_YvaR4EklEfGog-0ndxrIVw" base_NamedElement="_YvaR4EklEfGog-0ndxrIVw">
-    <context>in$pb = 0.8</context>
-    <context>out$rt</context>
-    <context>out$X</context>
-    <context>out$U</context>
-    <context>in$lambda</context>
-  </GQAM:GaAnalysisContext>
-  <GQAM:GaStep xmi:id="_1nZpgEkoEfGog-0ndxrIVw" base_NamedElement="_zfwAgEkoEfGog-0ndxrIVw" rep="(value=10)" prob="(expr=$pb)" host="_AcH0wEYSEfGJzLEwe25cEw">
-    <hostDemand>(value= 2, unit=ms, statQ=min, source=est)</hostDemand>
-  </GQAM:GaStep>
-  <GQAM:GaStep xmi:id="_u7_1kEk1EfGog-0ndxrIVw" base_NamedElement="_j9pRoEk1EfGog-0ndxrIVw" rep="(value=10)" prob="(expr=1-$pb)">
-    <hostDemand>(value= 2, unit=ms, statQ=min, source=est)</hostDemand>
-  </GQAM:GaStep>
-  <GQAM:GaStep xmi:id="_2ToKcEk1EfGog-0ndxrIVw" base_NamedElement="_0r9CAEk1EfGog-0ndxrIVw" rep="(value=10)" prob="(expr=$pb)" host="_AcH0wEYSEfGJzLEwe25cEw">
-    <hostDemand>(value= 2, unit=ms, statQ=min, source=est)</hostDemand>
-  </GQAM:GaStep>
-  <GQAM:GaStep xmi:id="_A4ieMEk3EfGog-0ndxrIVw" base_NamedElement="_-RqikEk2EfGog-0ndxrIVw" rep="(value=10)" prob="(expr=1-$pb)" host="_AcH0wEYSEfGJzLEwe25cEw">
-    <hostDemand>(value= 2, unit=ms, statQ=min, source=est)</hostDemand>
-  </GQAM:GaStep>
-  <GQAM:GaStep xmi:id="_eJ_mEEk3EfGog-0ndxrIVw" base_NamedElement="_chxEAEk3EfGog-0ndxrIVw" rep="(value=10)" prob="">
-    <hostDemand>(value= 2, unit=ms, statQ=min, source=est)</hostDemand>
-  </GQAM:GaStep>
-  <GQAM:GaStep xmi:id="_fcLmsEk3EfGog-0ndxrIVw" base_NamedElement="_ZDtBsEk3EfGog-0ndxrIVw" rep="(value=10)" prob="(expr=$pb)" host="_AcH0wEYSEfGJzLEwe25cEw">
-    <hostDemand>(value= 2, unit=ms, statQ=min, source=est)</hostDemand>
-  </GQAM:GaStep>
-  <GQAM:GaStep xmi:id="_gWTFkEk3EfGog-0ndxrIVw" base_NamedElement="_aJovAEk3EfGog-0ndxrIVw" rep="(value=10)" prob="" host="_AcH0wEYSEfGJzLEwe25cEw">
-    <hostDemand>(value= 2, unit=ms, statQ=min, source=est)</hostDemand>
-  </GQAM:GaStep>
-  <GQAM:GaStep xmi:id="_hJIQsEk3EfGog-0ndxrIVw" base_NamedElement="_XErJMEk3EfGog-0ndxrIVw" base_Action="_XErJMEk3EfGog-0ndxrIVw" rep="(value=10)" host="_AcH0wEYSEfGJzLEwe25cEw">
-    <hostDemand>(value= 2, unit=ms, statQ=min, source=est)</hostDemand>
-  </GQAM:GaStep>
-  <GQAM:GaStep xmi:id="_iqMa0Ek3EfGog-0ndxrIVw" base_NamedElement="_d6U6wEkpEfGog-0ndxrIVw" base_Action="_d6U6wEkpEfGog-0ndxrIVw" rep="(value=10)" prob="" host="_AcH0wEYSEfGJzLEwe25cEw">
-    <hostDemand>(value= 2, unit=ms, statQ=min, source=est)</hostDemand>
-  </GQAM:GaStep>
-  <GQAM:GaStep xmi:id="_k5jOUEk3EfGog-0ndxrIVw" base_NamedElement="_9S1YQEk1EfGog-0ndxrIVw" base_Action="_9S1YQEk1EfGog-0ndxrIVw" rep="(value=10)" prob="" host="_CE1fAEYSEfGJzLEwe25cEw">
-    <hostDemand>(value= 2, unit=ms, statQ=min, source=est)</hostDemand>
-  </GQAM:GaStep>
-  <GQAM:GaStep xmi:id="_qeBRkEk5EfGog-0ndxrIVw" base_NamedElement="_lZb9YEk5EfGog-0ndxrIVw" rep="(value=10)" prob="(expr=1-$pb)" host="_AcH0wEYSEfGJzLEwe25cEw">
-    <hostDemand>(value= 2, unit=ms, statQ=min, source=est)</hostDemand>
-  </GQAM:GaStep>
-  <GQAM:GaStep xmi:id="_SSfaUEk8EfGog-0ndxrIVw" base_NamedElement="_KN4lUEkpEfGog-0ndxrIVw" base_Action="_KN4lUEkpEfGog-0ndxrIVw" rep="(value=10)">
-    <hostDemand>(value= 2, unit=ms, statQ=min, source=est)</hostDemand>
-  </GQAM:GaStep>
   <GQAM:GaStep xmi:id="_02ZeAEliEfGlM9xeY4vQvg" base_NamedElement="_sLwi8ESdEfG5IfPuLrm8vg" base_Action="_sLwi8ESdEfG5IfPuLrm8vg"/>
   <GQAM:GaStep xmi:id="_zdafkElnEfGlM9xeY4vQvg" base_NamedElement="_x3XHwElnEfGlM9xeY4vQvg" prob="(expr=$pb)"/>
   <GQAM:GaStep xmi:id="_2rQ7oElnEfGlM9xeY4vQvg" base_NamedElement="_rAsx8ElnEfGlM9xeY4vQvg" prob="(expr=1-$pb)"/>
-  <GQAM:GaStep xmi:id="_dS2TIEltEfGZCZfngxpIYg" base_NamedElement="_vCt0gEkoEfGog-0ndxrIVw" base_Action="_vCt0gEkoEfGog-0ndxrIVw" prob=""/>
-  <GQAM:GaStep xmi:id="_CqLV8EluEfGZCZfngxpIYg" base_NamedElement="_GynNwEkoEfGog-0ndxrIVw" rep="(value=10)" prob="">
-    <hostDemand>(value= 2, unit=ms, statQ=min, source=est)</hostDemand>
+  <GQAM:GaScenario xmi:id="_BjdvEEl6EfG-xJVFfVsWkA" base_NamedElement="_7F09QEl5EfG-xJVFfVsWkA" usedResources="_WVslkEYREfGJzLEwe25cEw _6n3-MEYREfGJzLEwe25cEw _AcH0wEYSEfGJzLEwe25cEw _CE1fAEYSEfGJzLEwe25cEw" base_Behavior="_7F09QEl5EfG-xJVFfVsWkA" cause="_DYDSIEl6EfG-xJVFfVsWkA" parentStep="_N06SkEl6EfG-xJVFfVsWkA">
+    <throughput>(expr=$X,unit=Hz,source=calc)</throughput>
+    <respT>(expr=$rt, unit=ms, statQ=mean, source=calc)</respT>
+  </GQAM:GaScenario>
+  <GQAM:GaAnalysisContext xmi:id="_BjngEEl6EfG-xJVFfVsWkA" base_StructuredClassifier="_7F09QEl5EfG-xJVFfVsWkA" base_NamedElement="_7F09QEl5EfG-xJVFfVsWkA">
+    <context>in$pb = 0.8</context>
+    <context>in$lambda = 5</context>
+    <context>out$rt</context>
+    <context>out$X</context>
+    <context>out$U</context>
+  </GQAM:GaAnalysisContext>
+  <GQAM:GaWorkloadEvent xmi:id="_DYDSIEl6EfG-xJVFfVsWkA" pattern="open=(arrivalRate=(expr=$lambda,unit=Hz,statQ=mean,source=est))" base_NamedElement="_9qLJUEl5EfG-xJVFfVsWkA"/>
+  <GQAM:GaStep xmi:id="_N06SkEl6EfG-xJVFfVsWkA" base_NamedElement="_HBtgcEl6EfG-xJVFfVsWkA" base_Action="_HBtgcEl6EfG-xJVFfVsWkA" rep="(value=10)" host="_AcH0wEYSEfGJzLEwe25cEw" childScenario="_BjdvEEl6EfG-xJVFfVsWkA">
+    <hostDemand>(value= 2, unit=ms, statQ=mean, source=est)</hostDemand>
+  </GQAM:GaStep>
+  <GQAM:GaStep xmi:id="_YQPpAEl6EfG-xJVFfVsWkA" base_NamedElement="_S178cEl6EfG-xJVFfVsWkA" rep="(value=10)" prob="(expr= $pb)">
+    <hostDemand>(value= 2, unit=ms, statQ=mean, source=est)</hostDemand>
+  </GQAM:GaStep>
+  <GQAM:GaStep xmi:id="_ZQEuUEl6EfG-xJVFfVsWkA" base_NamedElement="_Tzyr0El6EfG-xJVFfVsWkA" rep="(value=10)" prob="(expr= 1-$pb)">
+    <hostDemand>(value= 2, unit=ms, statQ=mean, source=est)</hostDemand>
+  </GQAM:GaStep>
+  <GQAM:GaStep xmi:id="_43rt4El9EfG-xJVFfVsWkA" base_NamedElement="_1iwZcEl9EfG-xJVFfVsWkA" base_Action="_1iwZcEl9EfG-xJVFfVsWkA" rep="(value=10)">
+    <hostDemand>(value= 2, unit=ms, statQ=mean, source=est)</hostDemand>
+  </GQAM:GaStep>
+  <GQAM:GaStep xmi:id="_SDw70El-EfG-xJVFfVsWkA" base_NamedElement="_P3USYEl-EfG-xJVFfVsWkA" rep="(value=10)" prob="(expr= 1 - $pb)">
+    <hostDemand>(value= 2, unit=ms, statQ=mean, source=est)</hostDemand>
+  </GQAM:GaStep>
+  <GQAM:GaStep xmi:id="_ZdrIoEl-EfG-xJVFfVsWkA" base_NamedElement="_XPCG0El-EfG-xJVFfVsWkA" rep="(value=10)" prob="(expr= $pb)">
+    <hostDemand>(value= 2, unit=ms, statQ=mean, source=est)</hostDemand>
+  </GQAM:GaStep>
+  <GQAM:GaStep xmi:id="_e6O38El-EfG-xJVFfVsWkA" base_NamedElement="_NPOOwEl-EfG-xJVFfVsWkA" base_Action="_NPOOwEl-EfG-xJVFfVsWkA" rep="(value=10)">
+    <hostDemand>(value= 2, unit=ms, statQ=mean, source=est)</hostDemand>
+  </GQAM:GaStep>
+  <GQAM:GaStep xmi:id="_AoAaIEl_EfG-xJVFfVsWkA" base_NamedElement="_77avMEl-EfG-xJVFfVsWkA" base_Action="_77avMEl-EfG-xJVFfVsWkA" rep="(value=10)" host="_CE1fAEYSEfGJzLEwe25cEw">
+    <hostDemand>(value= 2, unit=ms, statQ=mean, source=est)</hostDemand>
+  </GQAM:GaStep>
+  <GQAM:GaStep xmi:id="_yDti4EmBEfG-xJVFfVsWkA" base_NamedElement="_wTcfIEmBEfG-xJVFfVsWkA" rep="(value=10)" prob="(expr= $pb)">
+    <hostDemand>(value= 2, unit=ms, statQ=mean, source=est)</hostDemand>
+  </GQAM:GaStep>
+  <GQAM:GaStep xmi:id="_2rF9sEmBEfG-xJVFfVsWkA" base_NamedElement="_t8yJwEmBEfG-xJVFfVsWkA" rep="(value=10)" prob="(expr= 1-$pb)">
+    <hostDemand>(value= 2, unit=ms, statQ=mean, source=est)</hostDemand>
+  </GQAM:GaStep>
+  <GQAM:GaStep xmi:id="_Y6FhIEmDEfG-xJVFfVsWkA" base_NamedElement="_RLf6QEmCEfG-xJVFfVsWkA" base_Action="_RLf6QEmCEfG-xJVFfVsWkA" rep="(value=10)">
+    <hostDemand>(value= 2, unit=ms, statQ=mean, source=est)</hostDemand>
   </GQAM:GaStep>
 </xmi:XMI>
