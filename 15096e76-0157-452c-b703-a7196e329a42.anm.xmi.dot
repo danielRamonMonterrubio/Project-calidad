@@ -1,0 +1,74 @@
+strict digraph {
+	graph [ pad="1.3", ranksep="1.3", nodesep="1.3" ];
+	overlap=scale;
+	splines=true;
+	rankdir="LR";
+	
+	node [ fixedsize=true ];
+	    
+    subgraph "places" {
+        node [ label="", shape=circle, width=1.3 ]
+		"_YV7_5En_EfGRx9eH7NY2pw" [ label="Crear_Reserva",  ];
+		"_YVrhMUn_EfGRx9eH7NY2pw" [ label="Validar_Credenciales",  ];
+		"_YV7_4Un_EfGRx9eH7NY2pw" [ label="",  ];
+		"_YVrhMEn_EfGRx9eH7NY2pw" [ label="",  ];
+		"_YV7_4kn_EfGRx9eH7NY2pw" [ label="",  ];
+		"_YV1SM0n_EfGRx9eH7NY2pw" [ label="Crear_Reserva",  ];
+		"_YV7_40n_EfGRx9eH7NY2pw" [ label="",  ];
+		"_YVxAwUn_EfGRx9eH7NY2pw" [ label="Insertar_Reserva_BD",  ];
+		"_YVn20kn_EfGRx9eH7NY2pw" [ label="Confirmar_Creacion",  ];
+		"_YV91EUn_EfGRx9eH7NY2pw" [ label="Comprobar_Policies",  ];
+		"_YV_DNEn_EfGRx9eH7NY2pw" [ label="Mostrar_Error",  ];
+		"_YV1SMEn_EfGRx9eH7NY2pw" [ label="Comprobar_Disponibilidad",  ];
+		"_YVxn0kn_EfGRx9eH7NY2pw" [ label="FinishConsulta",  ];
+		"_YV_DMUn_EfGRx9eH7NY2pw" [ label="Consultar_BD",  ];
+		"_YWk5EEn_EfGRx9eH7NY2pw" [ label="Users",  ];
+    }
+    
+    subgraph "immediate" {
+    	node [ label="", color=black, shape=box, width=0.2, height=1.3, style=filled ];
+    }
+
+    subgraph "timed" {
+    	node [ label="", shape=box, width=0.2, height=1.3 ];
+    }
+
+	"_YV_DNEn_EfGRx9eH7NY2pw" -> "_YV_DNUn_EfGRx9eH7NY2pw";
+	"_YV7_40n_EfGRx9eH7NY2pw" -> "_YWEix0n_EfGRx9eH7NY2pw";
+	"_YV7_4kn_EfGRx9eH7NY2pw" -> "_YWEiwkn_EfGRx9eH7NY2pw";
+	"_YVn20kn_EfGRx9eH7NY2pw" -> "_YVqTEEn_EfGRx9eH7NY2pw";
+	"_YWk5EEn_EfGRx9eH7NY2pw" -> "_YVxn00n_EfGRx9eH7NY2pw";
+	"_YVrhMkn_EfGRx9eH7NY2pw" -> "_YV7_40n_EfGRx9eH7NY2pw";
+	"_YV7_4Un_EfGRx9eH7NY2pw" -> "_YWVogUn_EfGRx9eH7NY2pw";
+	"_YVrhMEn_EfGRx9eH7NY2pw" -> "_YWQI8Un_EfGRx9eH7NY2pw";
+	"_YWEix0n_EfGRx9eH7NY2pw" -> "_YV1SM0n_EfGRx9eH7NY2pw";
+	"_YV7_5En_EfGRx9eH7NY2pw" -> "_YV9OAEn_EfGRx9eH7NY2pw";
+	"_YWSlMkn_EfGRx9eH7NY2pw" -> "_YVxn0kn_EfGRx9eH7NY2pw";
+	"_YWLQckn_EfGRx9eH7NY2pw" -> "_YV1SMEn_EfGRx9eH7NY2pw";
+	"_YV3HYEn_EfGRx9eH7NY2pw" -> "_YV91EUn_EfGRx9eH7NY2pw";
+	"_YV_DMkn_EfGRx9eH7NY2pw" -> "_YV7_4Un_EfGRx9eH7NY2pw";
+	"_YV7_4Un_EfGRx9eH7NY2pw" -> "_YV_DN0n_EfGRx9eH7NY2pw";
+	"_YVy18Un_EfGRx9eH7NY2pw" -> "_YVrhMUn_EfGRx9eH7NY2pw";
+	"_YVxn0kn_EfGRx9eH7NY2pw" -> "_YVxn00n_EfGRx9eH7NY2pw";
+	"_YWXdskn_EfGRx9eH7NY2pw" -> "_YV_DNEn_EfGRx9eH7NY2pw";
+	"_YVqTEEn_EfGRx9eH7NY2pw" -> "_YVxn0kn_EfGRx9eH7NY2pw";
+	"_YWQI8Un_EfGRx9eH7NY2pw" -> "_YVn20kn_EfGRx9eH7NY2pw";
+	"_YV91EUn_EfGRx9eH7NY2pw" -> "_YV91Ekn_EfGRx9eH7NY2pw";
+	"_YV9OAEn_EfGRx9eH7NY2pw" -> "_YVxAwUn_EfGRx9eH7NY2pw";
+	"_YVy18Un_EfGRx9eH7NY2pw" -> "_YWk5EEn_EfGRx9eH7NY2pw";
+	"_YV1SM0n_EfGRx9eH7NY2pw" -> "_YV3HYEn_EfGRx9eH7NY2pw";
+	"_YV7_40n_EfGRx9eH7NY2pw" -> "_YWSlMkn_EfGRx9eH7NY2pw";
+	"_YV1SMEn_EfGRx9eH7NY2pw" -> "_YV1SMUn_EfGRx9eH7NY2pw";
+	"_YV_DNUn_EfGRx9eH7NY2pw" -> "_YVxn0kn_EfGRx9eH7NY2pw";
+	"_YVxAwUn_EfGRx9eH7NY2pw" -> "_YVxn0En_EfGRx9eH7NY2pw";
+	"_YV1SMUn_EfGRx9eH7NY2pw" -> "_YV_DMUn_EfGRx9eH7NY2pw";
+	"_YWVogUn_EfGRx9eH7NY2pw" -> "_YV_DNEn_EfGRx9eH7NY2pw";
+	"_YV91Ekn_EfGRx9eH7NY2pw" -> "_YV7_4kn_EfGRx9eH7NY2pw";
+	"_YV7_4kn_EfGRx9eH7NY2pw" -> "_YWLQckn_EfGRx9eH7NY2pw";
+	"_YV_DN0n_EfGRx9eH7NY2pw" -> "_YV7_5En_EfGRx9eH7NY2pw";
+	"_YWEiwkn_EfGRx9eH7NY2pw" -> "_YVxn0kn_EfGRx9eH7NY2pw";
+	"_YV_DMUn_EfGRx9eH7NY2pw" -> "_YV_DMkn_EfGRx9eH7NY2pw";
+	"_YVxn0En_EfGRx9eH7NY2pw" -> "_YVrhMEn_EfGRx9eH7NY2pw";
+	"_YVrhMEn_EfGRx9eH7NY2pw" -> "_YWXdskn_EfGRx9eH7NY2pw";
+	"_YVrhMUn_EfGRx9eH7NY2pw" -> "_YVrhMkn_EfGRx9eH7NY2pw";
+}

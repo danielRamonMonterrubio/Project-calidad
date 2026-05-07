@@ -1,0 +1,82 @@
+strict digraph {
+	graph [ pad="1.3", ranksep="1.3", nodesep="1.3" ];
+	overlap=scale;
+	splines=true;
+	rankdir="LR";
+	
+	node [ fixedsize=true ];
+	    
+    subgraph "places" {
+        node [ label="", shape=circle, width=1.3 ]
+		"_vchWYkn-EfGRx9eH7NY2pw" [ label="",  ];
+		"_vcvY0Un-EfGRx9eH7NY2pw" [ label="Es_Dia_Valido",  ];
+		"_vdAekUn-EfGRx9eH7NY2pw" [ label="Estructurar_Datos",  ];
+		"_vchWYUn-EfGRx9eH7NY2pw" [ label="",  ];
+		"_vdMEw0n-EfGRx9eH7NY2pw" [ label="Reservas_Dia",  ];
+		"_vd85wEn-EfGRx9eH7NY2pw" [ label="Users",  ];
+		"_vdMEwEn-EfGRx9eH7NY2pw" [ label="Mostrar_Error",  ];
+		"_vcbPwEn-EfGRx9eH7NY2pw" [ label="Consultar_Reservas",  ];
+		"_vc3UoUn-EfGRx9eH7NY2pw" [ label="Mostrar_Reservas",  ];
+		"_vdTZgUn-EfGRx9eH7NY2pw" [ label="",  ];
+		"_vchWY0n-EfGRx9eH7NY2pw" [ label="Consultar_Reservas_Dia_BD",  ];
+		"_vdFXEUn-EfGRx9eH7NY2pw" [ label="",  ];
+		"_vc5J0Un-EfGRx9eH7NY2pw" [ label="Validar_Credenciales",  ];
+    }
+    
+    subgraph "immediate" {
+    	node [ label="", color=black, shape=box, width=0.2, height=1.3, style=filled ];
+		"_vdMEwUn-EfGRx9eH7NY2pw" [  ];
+		"_vdj4Mkn-EfGRx9eH7NY2pw" [  xlabel="p=0.3"  ];
+		"_vdTZhkn-EfGRx9eH7NY2pw" [  xlabel="p=0.7"  ];
+		"_vc3Uokn-EfGRx9eH7NY2pw" [  ];
+		"_vcbPwUn-EfGRx9eH7NY2pw" [  ];
+		"_vdp-0kn-EfGRx9eH7NY2pw" [  xlabel="p=0.4"  ];
+		"_vdXq-En-EfGRx9eH7NY2pw" [  xlabel="p=0.6"  ];
+		"_vdg05En-EfGRx9eH7NY2pw" [  xlabel="p=0.9"  ];
+		"_vdg04Un-EfGRx9eH7NY2pw" [  xlabel="p=0.1"  ];
+		"_vdTZgkn-EfGRx9eH7NY2pw" [  ];
+    }
+
+    subgraph "timed" {
+    	node [ label="", shape=box, width=0.2, height=1.3 ];
+		"_vc5J0kn-EfGRx9eH7NY2pw" [ xlabel="t=20.0\ninfServ" ];
+		"_vdFXEkn-EfGRx9eH7NY2pw" [ xlabel="t=1.0\noneServ" ];
+		"_vdMExEn-EfGRx9eH7NY2pw" [ xlabel="t=6.6666665\ninfServ" ];
+		"_vcvY0kn-EfGRx9eH7NY2pw" [ xlabel="t=100.0\ninfServ" ];
+		"_vdAekkn-EfGRx9eH7NY2pw" [ xlabel="t=10.0\ninfServ" ];
+		"_vchWZEn-EfGRx9eH7NY2pw" [ xlabel="t=12.5\ninfServ" ];
+    }
+
+	"_vdAekkn-EfGRx9eH7NY2pw" -> "_vc3UoUn-EfGRx9eH7NY2pw";
+	"_vdp-0kn-EfGRx9eH7NY2pw" -> "_vdMEwEn-EfGRx9eH7NY2pw";
+	"_vdFXEUn-EfGRx9eH7NY2pw" -> "_vdg05En-EfGRx9eH7NY2pw";
+	"_vdMEw0n-EfGRx9eH7NY2pw" -> "_vdMExEn-EfGRx9eH7NY2pw";
+	"_vdTZgUn-EfGRx9eH7NY2pw" -> "_vdTZgkn-EfGRx9eH7NY2pw";
+	"_vdTZhkn-EfGRx9eH7NY2pw" -> "_vdMEw0n-EfGRx9eH7NY2pw";
+	"_vchWYUn-EfGRx9eH7NY2pw" -> "_vdTZhkn-EfGRx9eH7NY2pw";
+	"_vd85wEn-EfGRx9eH7NY2pw" -> "_vdTZgkn-EfGRx9eH7NY2pw";
+	"_vdFXEUn-EfGRx9eH7NY2pw" -> "_vdg04Un-EfGRx9eH7NY2pw";
+	"_vcbPwEn-EfGRx9eH7NY2pw" -> "_vcbPwUn-EfGRx9eH7NY2pw";
+	"_vchWYUn-EfGRx9eH7NY2pw" -> "_vdj4Mkn-EfGRx9eH7NY2pw";
+	"_vchWYkn-EfGRx9eH7NY2pw" -> "_vdp-0kn-EfGRx9eH7NY2pw";
+	"_vc3UoUn-EfGRx9eH7NY2pw" -> "_vc3Uokn-EfGRx9eH7NY2pw";
+	"_vchWZEn-EfGRx9eH7NY2pw" -> "_vchWYkn-EfGRx9eH7NY2pw";
+	"_vcbPwUn-EfGRx9eH7NY2pw" -> "_vcvY0Un-EfGRx9eH7NY2pw";
+	"_vcvY0kn-EfGRx9eH7NY2pw" -> "_vchWYUn-EfGRx9eH7NY2pw";
+	"_vdFXEkn-EfGRx9eH7NY2pw" -> "_vd85wEn-EfGRx9eH7NY2pw";
+	"_vdMEwUn-EfGRx9eH7NY2pw" -> "_vcbPwEn-EfGRx9eH7NY2pw";
+	"_vchWY0n-EfGRx9eH7NY2pw" -> "_vchWZEn-EfGRx9eH7NY2pw";
+	"_vc3Uokn-EfGRx9eH7NY2pw" -> "_vdTZgUn-EfGRx9eH7NY2pw";
+	"_vdg05En-EfGRx9eH7NY2pw" -> "_vcbPwEn-EfGRx9eH7NY2pw";
+	"_vdFXEkn-EfGRx9eH7NY2pw" -> "_vc5J0Un-EfGRx9eH7NY2pw";
+	"_vdAekUn-EfGRx9eH7NY2pw" -> "_vdAekkn-EfGRx9eH7NY2pw";
+	"_vdMEwEn-EfGRx9eH7NY2pw" -> "_vdMEwUn-EfGRx9eH7NY2pw";
+	"_vdMExEn-EfGRx9eH7NY2pw" -> "_vchWY0n-EfGRx9eH7NY2pw";
+	"_vcvY0Un-EfGRx9eH7NY2pw" -> "_vcvY0kn-EfGRx9eH7NY2pw";
+	"_vdj4Mkn-EfGRx9eH7NY2pw" -> "_vcbPwEn-EfGRx9eH7NY2pw";
+	"_vc5J0kn-EfGRx9eH7NY2pw" -> "_vdFXEUn-EfGRx9eH7NY2pw";
+	"_vdXq-En-EfGRx9eH7NY2pw" -> "_vdAekUn-EfGRx9eH7NY2pw";
+	"_vchWYkn-EfGRx9eH7NY2pw" -> "_vdXq-En-EfGRx9eH7NY2pw";
+	"_vc5J0Un-EfGRx9eH7NY2pw" -> "_vc5J0kn-EfGRx9eH7NY2pw";
+	"_vdg04Un-EfGRx9eH7NY2pw" -> "_vdTZgUn-EfGRx9eH7NY2pw";
+}
