@@ -4,41 +4,19 @@
 # not be removed.
 
 # SIM # BEGIN-RESERVED-COMMENTS
-# SIM # ID: 26ddc957-c1c6-46d1-bf71-d6647f511bbd
-# SIM # X Label: pb
+# SIM # ID: c09f7aa0-cdb3-412a-b382-4d2d1267d261
+# SIM # X Label: lambda
 # SIM # X Unit: null
-# SIM # Y Label: respT
-# SIM # Y Unit: ms
+# SIM # Y Label: throughput
+# SIM # Y Unit: Hz
 # SIM # SLA value: null
 # SIM # SLA unit: null
 # SIM # END-RESERVED-COMMENTS
 
-# pb	respT	id
-0.2	5.936	"fd13b5aa-7251-4ddb-ad12-51fa0e6d1351"
-0.5	11.219	"4e91fd79-cb62-43cc-aa67-259beda7b020"
-0.7	19.377	"dd618a74-7010-4432-8547-b4e78a2edadb"
-0.9	59.98	"d820515a-26a8-422c-86f8-599484a8253d"
-0.2	5.981	"408f29dc-0bbe-47b2-acb6-3c38e96ec925"
-0.5	11.138	"7bfd26c4-97d6-4bec-9417-fb41871d8782"
-0.7	19.252	"1c7a05b1-ea1b-40bb-9a24-cff61879c170"
-0.9	60.338	"fa646010-5555-40d9-83f8-424e27e3651f"
-0.2	5.851	"9ff328b1-3f30-4005-a318-ce8b29336be1"
-0.5	10.979	"80c12105-a320-45dc-8a45-ec5bf0843569"
-0.7	19.777	"428f28da-b2c0-4ad9-825b-d65dace9f5a6"
-0.9	58.709	"b06c89e0-2223-48a6-afbe-4a25f72a44cb"
-0.2	5.932	"462626f2-3a92-423b-943c-922fb5a8bddb"
-0.5	10.982	"0c120f49-5b6c-41f3-b2d7-5d1433f08136"
-0.7	19.231	"80d7487c-b39b-4ea4-ac69-a559534d77a2"
-0.9	60.519	"9c82e726-01e3-46bd-b899-fac54380bf8a"
-0.2	5.922	"ed77113d-86cb-423c-886a-5fce94fcf3e7"
-0.5	10.8	"51b3b0d0-c7e1-422a-a326-4e50ceaea76a"
-0.7	19.452	"c9742b13-4d7d-4270-a8f2-63320c2602dd"
-0.9	59.483	"3e593fc1-40ce-46c5-8123-40e098693acf"
-0.2	5.888	"c725b7ee-9efd-4086-b746-7f380208c83e"
-0.5	10.655	"d5ef59a3-8049-4607-81da-fe13a389a4a0"
-0.7	19.954	"1cbc1e54-935e-4b08-af61-8293e3594f89"
-0.9	59.664	"1b35d5c5-29e5-4f40-94a0-a7a7c5c9d07d"
-0.2	5.914	"89eaa7f1-14bd-45cc-9a07-c926f183ae26"
-0.5	10.737	"07cddba2-74cd-4dcf-bac9-12da0f2069e9"
-0.7	19.787	"d11a590e-bb60-495e-a208-f1be305160bc"
-0.9	59.738	"62191b88-8162-48f3-84ba-84081ab412b3"
+# lambda	throughput	id
+0.02	0.02	"f80410da-032c-4b89-b740-bf70c7861c1f"
+0.2	0.201	"e8b05a94-c74d-4071-bc88-82fec91d6746"
+1	1.012	"7d8291f8-c206-4af7-8e1f-51fa9eb68130"
+10	10.032	"a4469a90-c9c2-4ae7-8154-313866451c1c"
+100	99.894	"796fa4ce-157f-4331-9e86-646489deda28"
+1,000	959.753	"7140ba0e-e90c-4458-8515-049b1eef4cc5"

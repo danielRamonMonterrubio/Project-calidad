@@ -398,7 +398,7 @@
   <GQAM:GaStep xmi:id="_pvDEYESnEfG5IfPuLrm8vg" base_NamedElement="_afJLsESnEfG5IfPuLrm8vg" base_Action="_afJLsESnEfG5IfPuLrm8vg" rep="(value=10)">
     <hostDemand>(value= 2, unit=ms, statQ=min, source=est)</hostDemand>
   </GQAM:GaStep>
-  <PAM:PaLogicalResource xmi:id="_j9UcsESvEfG5IfPuLrm8vg" base_Classifier="_t1UagEMYEfGUsvfU6if9iw" poolSize="(value=50, source=est)"/>
+  <PAM:PaLogicalResource xmi:id="_j9UcsESvEfG5IfPuLrm8vg" base_Classifier="_t1UagEMYEfGUsvfU6if9iw" poolSize="(value=1, source=est)"/>
   <GQAM:GaStep xmi:id="_IHAAoESwEfG5IfPuLrm8vg" base_NamedElement="_SN4AcESkEfG5IfPuLrm8vg" rep="(value=10)" prob="(expr=$pb)">
     <hostDemand>(value= 2, unit=ms, statQ=min, source=est)</hostDemand>
   </GQAM:GaStep>
@@ -409,54 +409,61 @@
   <GQAM:GaExecHost xmi:id="_6n3-MEYREfGJzLEwe25cEw" resMult="(1, est)" base_Classifier="_YIBnoEMYEfGUsvfU6if9iw"/>
   <GQAM:GaExecHost xmi:id="_AcH0wEYSEfGJzLEwe25cEw" resMult="(1, est)" base_Classifier="_YXUA0EMYEfGUsvfU6if9iw"/>
   <GQAM:GaExecHost xmi:id="_CE1fAEYSEfGJzLEwe25cEw" resMult="(1, est)" base_Classifier="_YqSAIEMYEfGUsvfU6if9iw"/>
-  <PAM:PaLogicalResource xmi:id="_iTySwEYSEfGJzLEwe25cEw" base_Classifier="_7xqZkEMYEfGUsvfU6if9iw" poolSize="(value=50, source=est)"/>
+  <PAM:PaLogicalResource xmi:id="_iTySwEYSEfGJzLEwe25cEw" base_Classifier="_7xqZkEMYEfGUsvfU6if9iw" poolSize="(value=1, source=est)"/>
   <PAM:PaLogicalResource xmi:id="_os5w8EYSEfGJzLEwe25cEw" base_Classifier="_uO7NUEMYEfGUsvfU6if9iw" poolSize="(value=20-50, source=est)"/>
   <GQAM:GaStep xmi:id="_02ZeAEliEfGlM9xeY4vQvg" base_NamedElement="_sLwi8ESdEfG5IfPuLrm8vg" base_Action="_sLwi8ESdEfG5IfPuLrm8vg"/>
   <GQAM:GaStep xmi:id="_zdafkElnEfGlM9xeY4vQvg" base_NamedElement="_x3XHwElnEfGlM9xeY4vQvg" prob="(expr=$pb)"/>
   <GQAM:GaStep xmi:id="_2rQ7oElnEfGlM9xeY4vQvg" base_NamedElement="_rAsx8ElnEfGlM9xeY4vQvg" prob="(expr=1-$pb)"/>
-  <GQAM:GaScenario xmi:id="_BjdvEEl6EfG-xJVFfVsWkA" base_NamedElement="_7F09QEl5EfG-xJVFfVsWkA" usedResources="_WVslkEYREfGJzLEwe25cEw _6n3-MEYREfGJzLEwe25cEw _AcH0wEYSEfGJzLEwe25cEw _CE1fAEYSEfGJzLEwe25cEw" base_Behavior="_7F09QEl5EfG-xJVFfVsWkA" cause="_DYDSIEl6EfG-xJVFfVsWkA" parentStep="_N06SkEl6EfG-xJVFfVsWkA">
+  <GQAM:GaScenario xmi:id="_BjdvEEl6EfG-xJVFfVsWkA" base_NamedElement="_7F09QEl5EfG-xJVFfVsWkA" usedResources="_iTySwEYSEfGJzLEwe25cEw _j9UcsESvEfG5IfPuLrm8vg" base_Behavior="_7F09QEl5EfG-xJVFfVsWkA" cause="_DYDSIEl6EfG-xJVFfVsWkA" parentStep="_N06SkEl6EfG-xJVFfVsWkA">
     <throughput>(expr=$X,unit=Hz,source=calc)</throughput>
     <respT>(expr=$rt, unit=ms, statQ=mean, source=calc)</respT>
   </GQAM:GaScenario>
   <GQAM:GaAnalysisContext xmi:id="_BjngEEl6EfG-xJVFfVsWkA" base_StructuredClassifier="_7F09QEl5EfG-xJVFfVsWkA" base_NamedElement="_7F09QEl5EfG-xJVFfVsWkA">
-    <context>in$pb = 0.8</context>
-    <context>in$lambda = 5</context>
+    <context>in$lambda = { 0.02, 0.04, 0.06, 0.08, 0.1, 0.12, 0.14, 0.16, 0.18, 0.2 }</context>
     <context>out$rt</context>
     <context>out$X</context>
     <context>out$U</context>
+    <context>in$time_validate_cred = 50</context>
+    <context>in$time_is_valid = 10</context>
+    <context>in$time_reservas_dia = 150</context>
+    <context>in$time_struct_data = 100</context>
+    <context>in$time_reservas_BD = 80</context>
+    <context>in$pb_val_cred = 0.9</context>
+    <context>in$pb_val_dia = 0.7</context>
+    <context>in$pb_consulta_bd = 0.6</context>
   </GQAM:GaAnalysisContext>
   <GQAM:GaWorkloadEvent xmi:id="_DYDSIEl6EfG-xJVFfVsWkA" pattern="open=(arrivalRate=(expr=$lambda,unit=Hz,statQ=mean,source=est))" base_NamedElement="_9qLJUEl5EfG-xJVFfVsWkA"/>
   <GQAM:GaStep xmi:id="_N06SkEl6EfG-xJVFfVsWkA" base_NamedElement="_HBtgcEl6EfG-xJVFfVsWkA" base_Action="_HBtgcEl6EfG-xJVFfVsWkA" rep="(value=10)" host="_AcH0wEYSEfGJzLEwe25cEw" childScenario="_BjdvEEl6EfG-xJVFfVsWkA">
+    <hostDemand>(expr=$time_validate_cred, unit=ms, statQ=mean, source=est)</hostDemand>
+  </GQAM:GaStep>
+  <GQAM:GaStep xmi:id="_YQPpAEl6EfG-xJVFfVsWkA" base_NamedElement="_S178cEl6EfG-xJVFfVsWkA" rep="(value=10)" prob="(expr= $pb_val_cred)">
     <hostDemand>(value= 2, unit=ms, statQ=mean, source=est)</hostDemand>
   </GQAM:GaStep>
-  <GQAM:GaStep xmi:id="_YQPpAEl6EfG-xJVFfVsWkA" base_NamedElement="_S178cEl6EfG-xJVFfVsWkA" rep="(value=10)" prob="(expr= $pb)">
-    <hostDemand>(value= 2, unit=ms, statQ=mean, source=est)</hostDemand>
-  </GQAM:GaStep>
-  <GQAM:GaStep xmi:id="_ZQEuUEl6EfG-xJVFfVsWkA" base_NamedElement="_Tzyr0El6EfG-xJVFfVsWkA" rep="(value=10)" prob="(expr= 1-$pb)">
+  <GQAM:GaStep xmi:id="_ZQEuUEl6EfG-xJVFfVsWkA" base_NamedElement="_Tzyr0El6EfG-xJVFfVsWkA" rep="(value=10)" prob="(expr= 1-$pb_val_cred)">
     <hostDemand>(value= 2, unit=ms, statQ=mean, source=est)</hostDemand>
   </GQAM:GaStep>
   <GQAM:GaStep xmi:id="_43rt4El9EfG-xJVFfVsWkA" base_NamedElement="_1iwZcEl9EfG-xJVFfVsWkA" base_Action="_1iwZcEl9EfG-xJVFfVsWkA" rep="(value=10)">
+    <hostDemand>(expr=$time_is_valid, unit=ms, statQ=mean, source=est)</hostDemand>
+  </GQAM:GaStep>
+  <GQAM:GaStep xmi:id="_SDw70El-EfG-xJVFfVsWkA" base_NamedElement="_P3USYEl-EfG-xJVFfVsWkA" rep="(value=10)" prob="(expr= 1 - $pb_val_dia)">
     <hostDemand>(value= 2, unit=ms, statQ=mean, source=est)</hostDemand>
   </GQAM:GaStep>
-  <GQAM:GaStep xmi:id="_SDw70El-EfG-xJVFfVsWkA" base_NamedElement="_P3USYEl-EfG-xJVFfVsWkA" rep="(value=10)" prob="(expr= 1 - $pb)">
-    <hostDemand>(value= 2, unit=ms, statQ=mean, source=est)</hostDemand>
-  </GQAM:GaStep>
-  <GQAM:GaStep xmi:id="_ZdrIoEl-EfG-xJVFfVsWkA" base_NamedElement="_XPCG0El-EfG-xJVFfVsWkA" rep="(value=10)" prob="(expr= $pb)">
+  <GQAM:GaStep xmi:id="_ZdrIoEl-EfG-xJVFfVsWkA" base_NamedElement="_XPCG0El-EfG-xJVFfVsWkA" rep="(value=10)" prob="(expr= $pb_val_dia)">
     <hostDemand>(value= 2, unit=ms, statQ=mean, source=est)</hostDemand>
   </GQAM:GaStep>
   <GQAM:GaStep xmi:id="_e6O38El-EfG-xJVFfVsWkA" base_NamedElement="_NPOOwEl-EfG-xJVFfVsWkA" base_Action="_NPOOwEl-EfG-xJVFfVsWkA" rep="(value=10)">
-    <hostDemand>(value= 2, unit=ms, statQ=mean, source=est)</hostDemand>
+    <hostDemand>(expr=$time_reservas_dia, unit=ms, statQ=mean, source=est)</hostDemand>
   </GQAM:GaStep>
   <GQAM:GaStep xmi:id="_AoAaIEl_EfG-xJVFfVsWkA" base_NamedElement="_77avMEl-EfG-xJVFfVsWkA" base_Action="_77avMEl-EfG-xJVFfVsWkA" rep="(value=10)" host="_CE1fAEYSEfGJzLEwe25cEw">
+    <hostDemand>(expr=$time_reservas_BD, unit=ms, statQ=mean, source=est)</hostDemand>
+  </GQAM:GaStep>
+  <GQAM:GaStep xmi:id="_yDti4EmBEfG-xJVFfVsWkA" base_NamedElement="_wTcfIEmBEfG-xJVFfVsWkA" rep="(value=10)" prob="(expr= 1-$pb_consulta_bd)">
     <hostDemand>(value= 2, unit=ms, statQ=mean, source=est)</hostDemand>
   </GQAM:GaStep>
-  <GQAM:GaStep xmi:id="_yDti4EmBEfG-xJVFfVsWkA" base_NamedElement="_wTcfIEmBEfG-xJVFfVsWkA" rep="(value=10)" prob="(expr= $pb)">
-    <hostDemand>(value= 2, unit=ms, statQ=mean, source=est)</hostDemand>
-  </GQAM:GaStep>
-  <GQAM:GaStep xmi:id="_2rF9sEmBEfG-xJVFfVsWkA" base_NamedElement="_t8yJwEmBEfG-xJVFfVsWkA" rep="(value=10)" prob="(expr= 1-$pb)">
+  <GQAM:GaStep xmi:id="_2rF9sEmBEfG-xJVFfVsWkA" base_NamedElement="_t8yJwEmBEfG-xJVFfVsWkA" rep="(value=10)" prob="(expr= $pb_consulta_bd)">
     <hostDemand>(value= 2, unit=ms, statQ=mean, source=est)</hostDemand>
   </GQAM:GaStep>
   <GQAM:GaStep xmi:id="_Y6FhIEmDEfG-xJVFfVsWkA" base_NamedElement="_RLf6QEmCEfG-xJVFfVsWkA" base_Action="_RLf6QEmCEfG-xJVFfVsWkA" rep="(value=10)">
-    <hostDemand>(value= 2, unit=ms, statQ=mean, source=est)</hostDemand>
+    <hostDemand>(expr=$time_struct_data, unit=ms, statQ=mean, source=est)</hostDemand>
   </GQAM:GaStep>
 </xmi:XMI>
