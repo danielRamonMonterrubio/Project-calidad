@@ -4,7 +4,7 @@
 # not be removed.
 
 # SIM # BEGIN-RESERVED-COMMENTS
-# SIM # ID: be4dfd81-6edd-4aaf-a67c-4932dfa7d484
+# SIM # ID: 3d297ab4-7c4f-4f4a-818f-e1ccf987fb3e
 # SIM # X Label: arrRate
 # SIM # X Unit: null
 # SIM # Y Label: utilization
@@ -14,7 +14,8 @@
 # SIM # END-RESERVED-COMMENTS
 
 # arrRate	utilization	id
-1	0	"8fe611c8-508b-42c4-bfe1-ea7893ed361d"
-3	0	"afd23bfc-7acd-4117-95fb-957159f8ad39"
-5	0	"46fdb8a4-1b0a-42d0-b26d-148f87c3fc02"
-10	0	"36f622f1-6c76-4304-b9ba-b280c3a0e30c"
+1	10.07	"5c053463-ce9c-4705-bb2b-fc0f0e12ae4f"
+3	30.276	"dc60ab83-f8a9-43c0-b307-f622da192c8f"
+5	50.86	"2377da39-ea70-4105-bab1-68ac768769d8"
+10	70.084	"ee766401-6af9-4f87-b72a-4cfe1ab9ff82"
+20	69.658	"e9b35a4d-13da-42c9-b5f6-5fc90f5baf98"
