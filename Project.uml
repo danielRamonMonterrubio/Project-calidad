@@ -143,7 +143,7 @@
       <node xmi:type="uml:OpaqueAction" xmi:id="_4M-fkEojEfG-X8AmxDgtlA" name="Validado" incoming="_S178cEl6EfG-xJVFfVsWkA" outgoing="__9a9EEojEfG-X8AmxDgtlA" inPartition="_GW_KoEmJEfGFF51CVOdtFg"/>
       <node xmi:type="uml:OpaqueAction" xmi:id="_EvPGQEokEfG-X8AmxDgtlA" name="Dia_Invalido" incoming="_P3USYEl-EfG-xJVFfVsWkA" outgoing="_H9WoEEokEfG-X8AmxDgtlA" inPartition="_GW_KoEmJEfGFF51CVOdtFg"/>
       <node xmi:type="uml:OpaqueAction" xmi:id="_JbDVIEokEfG-X8AmxDgtlA" name="Inv_Cred" incoming="_Tzyr0El6EfG-xJVFfVsWkA" outgoing="_OOzYAEokEfG-X8AmxDgtlA" inPartition="_GW_KoEmJEfGFF51CVOdtFg"/>
-      <node xmi:type="uml:OpaqueAction" xmi:id="_QrbLcEokEfG-X8AmxDgtlA" name="FAllo" incoming="_wTcfIEmBEfG-xJVFfVsWkA" outgoing="_UqXGMEokEfG-X8AmxDgtlA" inPartition="_vGq7QEmHEfGFF51CVOdtFg"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_QrbLcEokEfG-X8AmxDgtlA" name="Fallo" incoming="_wTcfIEmBEfG-xJVFfVsWkA" outgoing="_UqXGMEokEfG-X8AmxDgtlA" inPartition="_vGq7QEmHEfGFF51CVOdtFg"/>
       <node xmi:type="uml:OpaqueAction" xmi:id="_RzMEwEokEfG-X8AmxDgtlA" name="Acierto" incoming="_t8yJwEmBEfG-xJVFfVsWkA" outgoing="_WIml0EokEfG-X8AmxDgtlA" inPartition="_vGq7QEmHEfGFF51CVOdtFg"/>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Iq6ewEMrEfGwOovsXalXrA">
