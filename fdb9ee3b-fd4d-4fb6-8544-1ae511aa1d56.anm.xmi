@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ptnet:PetriNetDoc xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ptnet="http:///ptnet.ecore">
+  <nets id="_FT5PIEn7EfG-X8AmxDgtlA">
+    <pages id="_FT5PIUn7EfG-X8AmxDgtlA">
+      <objects xsi:type="ptnet:Place" id="_FT5PIkn7EfG-X8AmxDgtlA" InArcs="_FUEOQkn7EfG-X8AmxDgtlA" OutArcs="_FUByAEn7EfG-X8AmxDgtlA _FUDnMEn7EfG-X8AmxDgtlA">
+        <name text=""/>
+      </objects>
+      <objects xsi:type="ptnet:Place" id="_FT5PI0n7EfG-X8AmxDgtlA" InArcs="_FUDAIEn7EfG-X8AmxDgtlA" OutArcs="_FUByBEn7EfG-X8AmxDgtlA _FUEOQEn7EfG-X8AmxDgtlA">
+        <name text=""/>
+      </objects>
+      <objects xsi:type="ptnet:Place" id="_FT5PJEn7EfG-X8AmxDgtlA" InArcs="_FUBK8Un7EfG-X8AmxDgtlA" OutArcs="_FUCZE0n7EfG-X8AmxDgtlA _FUDAIkn7EfG-X8AmxDgtlA">
+        <name text=""/>
+      </objects>
+      <objects xsi:type="ptnet:Place" id="_FT5PJUn7EfG-X8AmxDgtlA" InArcs="_FUByBkn7EfG-X8AmxDgtlA" OutArcs="_FT7EUEn7EfG-X8AmxDgtlA">
+        <name text="Consultar_Reservas_Dia_BD"/>
+      </objects>
+      <objects xsi:type="ptnet:Transition" id="_FT5PJkn7EfG-X8AmxDgtlA" InArcs="_FT7EUEn7EfG-X8AmxDgtlA" OutArcs="_FUEOQkn7EfG-X8AmxDgtlA">
+        <name text="Consultar_Reservas_Dia_BD"/>
+        <toolspecifics tool="DICE PNML Extensions" version="0.1" formattedXMLBuffer="&lt;value grammar=&quot;http://es.unizar.dsico/pnconstants/tserv/infinite&quot;/>" toolInfoGrammarURI="http://es.unizar.dsico/pnconstants/tserv/infinite"/>
+        <toolspecifics tool="DICE PNML Extensions" version="0.1" formattedXMLBuffer="&lt;value grammar=&quot;http://es.unizar.disco/pnconstants/tkind/exponential&quot;>12.5&lt;/value>" toolInfoGrammarURI="http://es.unizar.disco/pnconstants/tkind/exponential"/>
+      </objects>
+      <objects xsi:type="ptnet:Arc" id="_FT7EUEn7EfG-X8AmxDgtlA" source="_FT5PJUn7EfG-X8AmxDgtlA" target="_FT5PJkn7EfG-X8AmxDgtlA"/>
+      <objects xsi:type="ptnet:Place" id="_FT7EUUn7EfG-X8AmxDgtlA" InArcs="_FUCZEUn7EfG-X8AmxDgtlA _FUEOQUn7EfG-X8AmxDgtlA" OutArcs="_FT7EU0n7EfG-X8AmxDgtlA">
+        <name text=""/>
+      </objects>
+      <objects xsi:type="ptnet:Transition" id="_FT7EUkn7EfG-X8AmxDgtlA" InArcs="_FT7EU0n7EfG-X8AmxDgtlA _FUGDckn7EfG-X8AmxDgtlA">
+        <name text=""/>
+      </objects>
+      <objects xsi:type="ptnet:Arc" id="_FT7EU0n7EfG-X8AmxDgtlA" source="_FT7EUUn7EfG-X8AmxDgtlA" target="_FT7EUkn7EfG-X8AmxDgtlA"/>
+      <objects xsi:type="ptnet:Place" id="_FT7EVEn7EfG-X8AmxDgtlA" InArcs="_FUCZFUn7EfG-X8AmxDgtlA" OutArcs="_FT8ScEn7EfG-X8AmxDgtlA">
+        <name text="Es_Dia_Valido"/>
+      </objects>
+      <objects xsi:type="ptnet:Transition" id="_FT7EVUn7EfG-X8AmxDgtlA" InArcs="_FT8ScEn7EfG-X8AmxDgtlA" OutArcs="_FUBK8Un7EfG-X8AmxDgtlA">
+        <name text="Es_Dia_Valido"/>
+        <toolspecifics tool="DICE PNML Extensions" version="0.1" formattedXMLBuffer="&lt;value grammar=&quot;http://es.unizar.disco/pnconstants/tkind/exponential&quot;>100.0&lt;/value>" toolInfoGrammarURI="http://es.unizar.disco/pnconstants/tkind/exponential"/>
+        <toolspecifics tool="DICE PNML Extensions" version="0.1" formattedXMLBuffer="&lt;value grammar=&quot;http://es.unizar.dsico/pnconstants/tserv/infinite&quot;/>" toolInfoGrammarURI="http://es.unizar.dsico/pnconstants/tserv/infinite"/>
+      </objects>
+      <objects xsi:type="ptnet:Arc" id="_FT8ScEn7EfG-X8AmxDgtlA" source="_FT7EVEn7EfG-X8AmxDgtlA" target="_FT7EVUn7EfG-X8AmxDgtlA"/>
+      <objects xsi:type="ptnet:Transition" id="_FT8ScUn7EfG-X8AmxDgtlA" OutArcs="_FUCZEEn7EfG-X8AmxDgtlA _FUGDcUn7EfG-X8AmxDgtlA">
+        <name text=""/>
+        <toolspecifics tool="DICE PNML Extensions" version="0.1" formattedXMLBuffer="&lt;value grammar=&quot;http://es.unizar.disco/pnconstants/tkind/exponential&quot;>1.0&lt;/value>" toolInfoGrammarURI="http://es.unizar.disco/pnconstants/tkind/exponential"/>
+        <toolspecifics tool="DICE PNML Extensions" version="0.1" formattedXMLBuffer="&lt;value grammar=&quot;http://es.unizar.dsico/pnconstants/tserv/one&quot;/>" toolInfoGrammarURI="http://es.unizar.dsico/pnconstants/tserv/one"/>
+      </objects>
+      <objects xsi:type="ptnet:Place" id="_FT85gEn7EfG-X8AmxDgtlA" InArcs="_FUCZFkn7EfG-X8AmxDgtlA" OutArcs="_FT85gkn7EfG-X8AmxDgtlA">
+        <name text="Mostrar_Reservas"/>
+      </objects>
+      <objects xsi:type="ptnet:Transition" id="_FT85gUn7EfG-X8AmxDgtlA" InArcs="_FT85gkn7EfG-X8AmxDgtlA" OutArcs="_FUCZEUn7EfG-X8AmxDgtlA">
+        <name text="Mostrar_Reservas"/>
+      </objects>
+      <objects xsi:type="ptnet:Arc" id="_FT85gkn7EfG-X8AmxDgtlA" source="_FT85gEn7EfG-X8AmxDgtlA" target="_FT85gUn7EfG-X8AmxDgtlA"/>
+      <objects xsi:type="ptnet:Place" id="_FT85g0n7EfG-X8AmxDgtlA" InArcs="_FUCZFEn7EfG-X8AmxDgtlA" OutArcs="_FT-HoEn7EfG-X8AmxDgtlA">
+        <name text="Reservas_Dia"/>
+      </objects>
+      <objects xsi:type="ptnet:Transition" id="_FT85hEn7EfG-X8AmxDgtlA" InArcs="_FT-HoEn7EfG-X8AmxDgtlA" OutArcs="_FUByBkn7EfG-X8AmxDgtlA">
+        <name text="Reservas_Dia"/>
+        <toolspecifics tool="DICE PNML Extensions" version="0.1" formattedXMLBuffer="&lt;value grammar=&quot;http://es.unizar.disco/pnconstants/tkind/exponential&quot;>6.666666666666667&lt;/value>" toolInfoGrammarURI="http://es.unizar.disco/pnconstants/tkind/exponential"/>
+        <toolspecifics tool="DICE PNML Extensions" version="0.1" formattedXMLBuffer="&lt;value grammar=&quot;http://es.unizar.dsico/pnconstants/tserv/infinite&quot;/>" toolInfoGrammarURI="http://es.unizar.dsico/pnconstants/tserv/infinite"/>
+      </objects>
+      <objects xsi:type="ptnet:Arc" id="_FT-HoEn7EfG-X8AmxDgtlA" source="_FT85g0n7EfG-X8AmxDgtlA" target="_FT85hEn7EfG-X8AmxDgtlA"/>
+      <objects xsi:type="ptnet:Place" id="_FT-usEn7EfG-X8AmxDgtlA" InArcs="_FUByAUn7EfG-X8AmxDgtlA" OutArcs="_FT-uskn7EfG-X8AmxDgtlA">
+        <name text="Mostrar_Error"/>
+      </objects>
+      <objects xsi:type="ptnet:Transition" id="_FT-usUn7EfG-X8AmxDgtlA" InArcs="_FT-uskn7EfG-X8AmxDgtlA" OutArcs="_FUByAkn7EfG-X8AmxDgtlA">
+        <name text="Mostrar_Error"/>
+      </objects>
+      <objects xsi:type="ptnet:Arc" id="_FT-uskn7EfG-X8AmxDgtlA" source="_FT-usEn7EfG-X8AmxDgtlA" target="_FT-usUn7EfG-X8AmxDgtlA"/>
+      <objects xsi:type="ptnet:Place" id="_FT-us0n7EfG-X8AmxDgtlA" InArcs="_FUCZEEn7EfG-X8AmxDgtlA" OutArcs="_FT_80En7EfG-X8AmxDgtlA">
+        <name text="Validar_Credenciales"/>
+      </objects>
+      <objects xsi:type="ptnet:Transition" id="_FT-utEn7EfG-X8AmxDgtlA" InArcs="_FT_80En7EfG-X8AmxDgtlA" OutArcs="_FUDAIEn7EfG-X8AmxDgtlA">
+        <name text="Validar_Credenciales"/>
+        <toolspecifics tool="DICE PNML Extensions" version="0.1" formattedXMLBuffer="&lt;value grammar=&quot;http://es.unizar.disco/pnconstants/tkind/exponential&quot;>20.0&lt;/value>" toolInfoGrammarURI="http://es.unizar.disco/pnconstants/tkind/exponential"/>
+        <toolspecifics tool="DICE PNML Extensions" version="0.1" formattedXMLBuffer="&lt;value grammar=&quot;http://es.unizar.dsico/pnconstants/tserv/infinite&quot;/>" toolInfoGrammarURI="http://es.unizar.dsico/pnconstants/tserv/infinite"/>
+      </objects>
+      <objects xsi:type="ptnet:Arc" id="_FT_80En7EfG-X8AmxDgtlA" source="_FT-us0n7EfG-X8AmxDgtlA" target="_FT-utEn7EfG-X8AmxDgtlA"/>
+      <objects xsi:type="ptnet:Place" id="_FT_80Un7EfG-X8AmxDgtlA" InArcs="_FUDnMUn7EfG-X8AmxDgtlA" OutArcs="_FUAj4En7EfG-X8AmxDgtlA">
+        <name text="Estructurar_Datos"/>
+      </objects>
+      <objects xsi:type="ptnet:Transition" id="_FT_80kn7EfG-X8AmxDgtlA" InArcs="_FUAj4En7EfG-X8AmxDgtlA" OutArcs="_FUCZFkn7EfG-X8AmxDgtlA">
+        <name text="Estructurar_Datos"/>
+        <toolspecifics tool="DICE PNML Extensions" version="0.1" formattedXMLBuffer="&lt;value grammar=&quot;http://es.unizar.dsico/pnconstants/tserv/infinite&quot;/>" toolInfoGrammarURI="http://es.unizar.dsico/pnconstants/tserv/infinite"/>
+        <toolspecifics tool="DICE PNML Extensions" version="0.1" formattedXMLBuffer="&lt;value grammar=&quot;http://es.unizar.disco/pnconstants/tkind/exponential&quot;>10.0&lt;/value>" toolInfoGrammarURI="http://es.unizar.disco/pnconstants/tkind/exponential"/>
+      </objects>
+      <objects xsi:type="ptnet:Arc" id="_FUAj4En7EfG-X8AmxDgtlA" source="_FT_80Un7EfG-X8AmxDgtlA" target="_FT_80kn7EfG-X8AmxDgtlA"/>
+      <objects xsi:type="ptnet:Place" id="_FUAj4Un7EfG-X8AmxDgtlA" InArcs="_FUByAkn7EfG-X8AmxDgtlA _FUByBUn7EfG-X8AmxDgtlA _FUDAI0n7EfG-X8AmxDgtlA" OutArcs="_FUBK8En7EfG-X8AmxDgtlA">
+        <name text="Consultar_Reservas"/>
+      </objects>
+      <objects xsi:type="ptnet:Transition" id="_FUAj4kn7EfG-X8AmxDgtlA" InArcs="_FUBK8En7EfG-X8AmxDgtlA" OutArcs="_FUCZFUn7EfG-X8AmxDgtlA">
+        <name text="Consultar_Reservas"/>
+      </objects>
+      <objects xsi:type="ptnet:Arc" id="_FUBK8En7EfG-X8AmxDgtlA" source="_FUAj4Un7EfG-X8AmxDgtlA" target="_FUAj4kn7EfG-X8AmxDgtlA"/>
+      <objects xsi:type="ptnet:Arc" id="_FUBK8Un7EfG-X8AmxDgtlA" source="_FT7EVUn7EfG-X8AmxDgtlA" target="_FT5PJEn7EfG-X8AmxDgtlA"/>
+      <objects xsi:type="ptnet:Transition" id="_FUBK8kn7EfG-X8AmxDgtlA" InArcs="_FUByAEn7EfG-X8AmxDgtlA" OutArcs="_FUByAUn7EfG-X8AmxDgtlA">
+        <name text="ERROR"/>
+        <toolspecifics tool="DICE PNML Extensions" version="0.1" formattedXMLBuffer="&lt;value grammar=&quot;http://es.unizar.disco/pnconstants/tkind/immediate&quot;>0.0&lt;/value>" toolInfoGrammarURI="http://es.unizar.disco/pnconstants/tkind/immediate"/>
+      </objects>
+      <objects xsi:type="ptnet:Arc" id="_FUByAEn7EfG-X8AmxDgtlA" source="_FT5PIkn7EfG-X8AmxDgtlA" target="_FUBK8kn7EfG-X8AmxDgtlA"/>
+      <objects xsi:type="ptnet:Arc" id="_FUByAUn7EfG-X8AmxDgtlA" source="_FUBK8kn7EfG-X8AmxDgtlA" target="_FT-usEn7EfG-X8AmxDgtlA"/>
+      <objects xsi:type="ptnet:Arc" id="_FUByAkn7EfG-X8AmxDgtlA" source="_FT-usUn7EfG-X8AmxDgtlA" target="_FUAj4Un7EfG-X8AmxDgtlA"/>
+      <objects xsi:type="ptnet:Transition" id="_FUByA0n7EfG-X8AmxDgtlA" InArcs="_FUByBEn7EfG-X8AmxDgtlA" OutArcs="_FUByBUn7EfG-X8AmxDgtlA">
+        <name text="OK"/>
+        <toolspecifics tool="DICE PNML Extensions" version="0.1" formattedXMLBuffer="&lt;value grammar=&quot;http://es.unizar.disco/pnconstants/tkind/immediate&quot;>1.0&lt;/value>" toolInfoGrammarURI="http://es.unizar.disco/pnconstants/tkind/immediate"/>
+      </objects>
+      <objects xsi:type="ptnet:Arc" id="_FUByBEn7EfG-X8AmxDgtlA" source="_FT5PI0n7EfG-X8AmxDgtlA" target="_FUByA0n7EfG-X8AmxDgtlA"/>
+      <objects xsi:type="ptnet:Arc" id="_FUByBUn7EfG-X8AmxDgtlA" source="_FUByA0n7EfG-X8AmxDgtlA" target="_FUAj4Un7EfG-X8AmxDgtlA"/>
+      <objects xsi:type="ptnet:Arc" id="_FUByBkn7EfG-X8AmxDgtlA" source="_FT85hEn7EfG-X8AmxDgtlA" target="_FT5PJUn7EfG-X8AmxDgtlA"/>
+      <objects xsi:type="ptnet:Arc" id="_FUCZEEn7EfG-X8AmxDgtlA" source="_FT8ScUn7EfG-X8AmxDgtlA" target="_FT-us0n7EfG-X8AmxDgtlA"/>
+      <objects xsi:type="ptnet:Arc" id="_FUCZEUn7EfG-X8AmxDgtlA" source="_FT85gUn7EfG-X8AmxDgtlA" target="_FT7EUUn7EfG-X8AmxDgtlA"/>
+      <objects xsi:type="ptnet:Transition" id="_FUCZEkn7EfG-X8AmxDgtlA" InArcs="_FUCZE0n7EfG-X8AmxDgtlA" OutArcs="_FUCZFEn7EfG-X8AmxDgtlA">
+        <name text="OK"/>
+        <toolspecifics tool="DICE PNML Extensions" version="0.1" formattedXMLBuffer="&lt;value grammar=&quot;http://es.unizar.disco/pnconstants/tkind/immediate&quot;>1.0&lt;/value>" toolInfoGrammarURI="http://es.unizar.disco/pnconstants/tkind/immediate"/>
+      </objects>
+      <objects xsi:type="ptnet:Arc" id="_FUCZE0n7EfG-X8AmxDgtlA" source="_FT5PJEn7EfG-X8AmxDgtlA" target="_FUCZEkn7EfG-X8AmxDgtlA"/>
+      <objects xsi:type="ptnet:Arc" id="_FUCZFEn7EfG-X8AmxDgtlA" source="_FUCZEkn7EfG-X8AmxDgtlA" target="_FT85g0n7EfG-X8AmxDgtlA"/>
+      <objects xsi:type="ptnet:Arc" id="_FUCZFUn7EfG-X8AmxDgtlA" source="_FUAj4kn7EfG-X8AmxDgtlA" target="_FT7EVEn7EfG-X8AmxDgtlA"/>
+      <objects xsi:type="ptnet:Arc" id="_FUCZFkn7EfG-X8AmxDgtlA" source="_FT_80kn7EfG-X8AmxDgtlA" target="_FT85gEn7EfG-X8AmxDgtlA"/>
+      <objects xsi:type="ptnet:Arc" id="_FUDAIEn7EfG-X8AmxDgtlA" source="_FT-utEn7EfG-X8AmxDgtlA" target="_FT5PI0n7EfG-X8AmxDgtlA"/>
+      <objects xsi:type="ptnet:Transition" id="_FUDAIUn7EfG-X8AmxDgtlA" InArcs="_FUDAIkn7EfG-X8AmxDgtlA" OutArcs="_FUDAI0n7EfG-X8AmxDgtlA">
+        <name text="ERROR"/>
+        <toolspecifics tool="DICE PNML Extensions" version="0.1" formattedXMLBuffer="&lt;value grammar=&quot;http://es.unizar.disco/pnconstants/tkind/immediate&quot;>0.0&lt;/value>" toolInfoGrammarURI="http://es.unizar.disco/pnconstants/tkind/immediate"/>
+      </objects>
+      <objects xsi:type="ptnet:Arc" id="_FUDAIkn7EfG-X8AmxDgtlA" source="_FT5PJEn7EfG-X8AmxDgtlA" target="_FUDAIUn7EfG-X8AmxDgtlA"/>
+      <objects xsi:type="ptnet:Arc" id="_FUDAI0n7EfG-X8AmxDgtlA" source="_FUDAIUn7EfG-X8AmxDgtlA" target="_FUAj4Un7EfG-X8AmxDgtlA"/>
+      <objects xsi:type="ptnet:Transition" id="_FUDAJEn7EfG-X8AmxDgtlA" InArcs="_FUDnMEn7EfG-X8AmxDgtlA" OutArcs="_FUDnMUn7EfG-X8AmxDgtlA">
+        <name text="OK"/>
+        <toolspecifics tool="DICE PNML Extensions" version="0.1" formattedXMLBuffer="&lt;value grammar=&quot;http://es.unizar.disco/pnconstants/tkind/immediate&quot;>1.0&lt;/value>" toolInfoGrammarURI="http://es.unizar.disco/pnconstants/tkind/immediate"/>
+      </objects>
+      <objects xsi:type="ptnet:Arc" id="_FUDnMEn7EfG-X8AmxDgtlA" source="_FT5PIkn7EfG-X8AmxDgtlA" target="_FUDAJEn7EfG-X8AmxDgtlA"/>
+      <objects xsi:type="ptnet:Arc" id="_FUDnMUn7EfG-X8AmxDgtlA" source="_FUDAJEn7EfG-X8AmxDgtlA" target="_FT_80Un7EfG-X8AmxDgtlA"/>
+      <objects xsi:type="ptnet:Transition" id="_FUDnMkn7EfG-X8AmxDgtlA" InArcs="_FUEOQEn7EfG-X8AmxDgtlA" OutArcs="_FUEOQUn7EfG-X8AmxDgtlA">
+        <name text="ERROR"/>
+        <toolspecifics tool="DICE PNML Extensions" version="0.1" formattedXMLBuffer="&lt;value grammar=&quot;http://es.unizar.disco/pnconstants/tkind/immediate&quot;>0.0&lt;/value>" toolInfoGrammarURI="http://es.unizar.disco/pnconstants/tkind/immediate"/>
+      </objects>
+      <objects xsi:type="ptnet:Arc" id="_FUEOQEn7EfG-X8AmxDgtlA" source="_FT5PI0n7EfG-X8AmxDgtlA" target="_FUDnMkn7EfG-X8AmxDgtlA"/>
+      <objects xsi:type="ptnet:Arc" id="_FUEOQUn7EfG-X8AmxDgtlA" source="_FUDnMkn7EfG-X8AmxDgtlA" target="_FT7EUUn7EfG-X8AmxDgtlA"/>
+      <objects xsi:type="ptnet:Arc" id="_FUEOQkn7EfG-X8AmxDgtlA" source="_FT5PJkn7EfG-X8AmxDgtlA" target="_FT5PIkn7EfG-X8AmxDgtlA"/>
+      <objects xsi:type="ptnet:Place" id="_FUGDcEn7EfG-X8AmxDgtlA" InArcs="_FUGDcUn7EfG-X8AmxDgtlA" OutArcs="_FUGDckn7EfG-X8AmxDgtlA">
+        <name text="Users"/>
+      </objects>
+      <objects xsi:type="ptnet:Arc" id="_FUGDcUn7EfG-X8AmxDgtlA" source="_FT8ScUn7EfG-X8AmxDgtlA" target="_FUGDcEn7EfG-X8AmxDgtlA"/>
+      <objects xsi:type="ptnet:Arc" id="_FUGDckn7EfG-X8AmxDgtlA" source="_FUGDcEn7EfG-X8AmxDgtlA" target="_FT7EUkn7EfG-X8AmxDgtlA"/>
+    </pages>
+    <name text="Activity50"/>
+    <toolspecifics tool="DICE PNML Extensions" version="0.1" formattedXMLBuffer="&lt;value grammar=&quot;http://es.unizar.dsico/pnconstants/units/basetimeunit&quot;>s&lt;/value>" toolInfoGrammarURI="http://es.unizar.dsico/pnconstants/units/basetimeunit"/>
+  </nets>
+</ptnet:PetriNetDoc>

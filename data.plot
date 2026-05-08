@@ -4,7 +4,7 @@
 # not be removed.
 
 # SIM # BEGIN-RESERVED-COMMENTS
-# SIM # ID: c09f7aa0-cdb3-412a-b382-4d2d1267d261
+# SIM # ID: 0631852c-2c82-427c-ba87-8c4ecfdd1c39
 # SIM # X Label: lambda
 # SIM # X Unit: null
 # SIM # Y Label: throughput
@@ -14,9 +14,8 @@
 # SIM # END-RESERVED-COMMENTS
 
 # lambda	throughput	id
-0.02	0.02	"f80410da-032c-4b89-b740-bf70c7861c1f"
-0.2	0.201	"e8b05a94-c74d-4071-bc88-82fec91d6746"
-1	1.012	"7d8291f8-c206-4af7-8e1f-51fa9eb68130"
-10	10.032	"a4469a90-c9c2-4ae7-8154-313866451c1c"
-100	99.894	"796fa4ce-157f-4331-9e86-646489deda28"
-1,000	959.753	"7140ba0e-e90c-4458-8515-049b1eef4cc5"
+0.2	0.201	"3267aee4-9133-48fa-a9f2-dfda010e59ba"
+1	0.995	"7b67d6a1-7e5c-4942-8b4c-e9ad8b86abd4"
+10	2.506	"d0f008f8-ae35-4d1c-9dfd-b91b488da3fe"
+100	2.539	"307c23e1-f896-416b-ba1a-1bcc81033b0c"
+1,000	2.51	"530702d7-9175-4ecd-9235-4232164d9405"
