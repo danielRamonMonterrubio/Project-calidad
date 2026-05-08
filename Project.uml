@@ -17,7 +17,7 @@
       <nestedClassifier xmi:type="uml:Artifact" xmi:id="_uhp8EEMYEfGUsvfU6if9iw" name="UseCases" fileName=""/>
     </packagedElement>
     <packagedElement xmi:type="uml:Node" xmi:id="_YqSAIEMYEfGUsvfU6if9iw" name="Docker">
-      <nestedClassifier xmi:type="uml:Artifact" xmi:id="_7xqZkEMYEfGUsvfU6if9iw" name="postgis + postgres"/>
+      <nestedClassifier xmi:type="uml:Artifact" xmi:id="_7xqZkEMYEfGUsvfU6if9iw" name="postgis + postgres" fileName=""/>
     </packagedElement>
     <packagedElement xmi:type="uml:CommunicationPath" xmi:id="_pqKBoEMYEfGUsvfU6if9iw" memberEnd="_pqOTEEMYEfGUsvfU6if9iw _pqO6IEMYEfGUsvfU6if9iw">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_pqMd4EMYEfGUsvfU6if9iw" source="org.eclipse.papyrus">
@@ -422,7 +422,7 @@
   <GQAM:GaStep xmi:id="_pvDEYESnEfG5IfPuLrm8vg" base_NamedElement="_afJLsESnEfG5IfPuLrm8vg" base_Action="_afJLsESnEfG5IfPuLrm8vg" rep="(value=10)">
     <hostDemand>(value= 2, unit=ms, statQ=min, source=est)</hostDemand>
   </GQAM:GaStep>
-  <PAM:PaLogicalResource xmi:id="_j9UcsESvEfG5IfPuLrm8vg" base_Classifier="_t1UagEMYEfGUsvfU6if9iw" utilization="(expr=$U_Exp, source=calc)" poolSize="(value=1)"/>
+  <PAM:PaLogicalResource xmi:id="_j9UcsESvEfG5IfPuLrm8vg" base_Classifier="_t1UagEMYEfGUsvfU6if9iw" utilization="(expr=$U_Exp, source=calc)" poolSize="(expr=$express)"/>
   <GQAM:GaStep xmi:id="_IHAAoESwEfG5IfPuLrm8vg" base_NamedElement="_SN4AcESkEfG5IfPuLrm8vg" rep="(value=10)" prob="(expr=$pb)">
     <hostDemand>(value= 2, unit=ms, statQ=min, source=est)</hostDemand>
   </GQAM:GaStep>
@@ -433,7 +433,7 @@
   <GQAM:GaExecHost xmi:id="_6n3-MEYREfGJzLEwe25cEw" resMult="(1, est)" base_Classifier="_YIBnoEMYEfGUsvfU6if9iw"/>
   <GQAM:GaExecHost xmi:id="_AcH0wEYSEfGJzLEwe25cEw" resMult="(1, est)" base_Classifier="_YXUA0EMYEfGUsvfU6if9iw"/>
   <GQAM:GaExecHost xmi:id="_CE1fAEYSEfGJzLEwe25cEw" resMult="(1, est)" base_Classifier="_YqSAIEMYEfGUsvfU6if9iw"/>
-  <PAM:PaLogicalResource xmi:id="_iTySwEYSEfGJzLEwe25cEw" base_Classifier="_7xqZkEMYEfGUsvfU6if9iw" utilization="(expr=$U_BD, source=calc)" poolSize="(value=1)"/>
+  <PAM:PaLogicalResource xmi:id="_iTySwEYSEfGJzLEwe25cEw" base_Classifier="_7xqZkEMYEfGUsvfU6if9iw" utilization="(expr=$U_BD, source=calc)" poolSize="(expr=$postgres)"/>
   <PAM:PaLogicalResource xmi:id="_os5w8EYSEfGJzLEwe25cEw" base_Classifier="_uO7NUEMYEfGUsvfU6if9iw" poolSize="(value=20-50, source=est)"/>
   <GQAM:GaStep xmi:id="_02ZeAEliEfGlM9xeY4vQvg" base_NamedElement="_sLwi8ESdEfG5IfPuLrm8vg" base_Action="_sLwi8ESdEfG5IfPuLrm8vg"/>
   <GQAM:GaStep xmi:id="_zdafkElnEfGlM9xeY4vQvg" base_NamedElement="_x3XHwElnEfGlM9xeY4vQvg" prob="(expr=$pb)"/>
@@ -443,7 +443,7 @@
     <respT>(expr=$rt, unit=ms, statQ=mean, source=calc)</respT>
   </GQAM:GaScenario>
   <GQAM:GaAnalysisContext xmi:id="_BjngEEl6EfG-xJVFfVsWkA" base_StructuredClassifier="_7F09QEl5EfG-xJVFfVsWkA" base_NamedElement="_7F09QEl5EfG-xJVFfVsWkA">
-    <context>in$lambda = { 0.02, 0.04, 0.06, 0.08, 0.1, 0.12, 0.14, 0.16, 0.18, 0.2 }</context>
+    <context>in$lambda = { 1,3,5,10,20}</context>
     <context>out$rt</context>
     <context>out$X</context>
     <context>out$U_Exp</context>
@@ -456,6 +456,8 @@
     <context>in$pb_val_dia = 0.7</context>
     <context>in$pb_consulta_bd = 0.6</context>
     <context>out$U_BD</context>
+    <context>in$express = 1</context>
+    <context>in$postgres = 1</context>
   </GQAM:GaAnalysisContext>
   <GQAM:GaWorkloadEvent xmi:id="_DYDSIEl6EfG-xJVFfVsWkA" pattern="open=(arrivalRate=(expr=$lambda,unit=Hz,statQ=mean,source=est))" base_NamedElement="_9qLJUEl5EfG-xJVFfVsWkA"/>
   <GQAM:GaStep xmi:id="_N06SkEl6EfG-xJVFfVsWkA" base_NamedElement="_HBtgcEl6EfG-xJVFfVsWkA" base_Action="_HBtgcEl6EfG-xJVFfVsWkA" rep="(value=10)" childScenario="_BjdvEEl6EfG-xJVFfVsWkA">
