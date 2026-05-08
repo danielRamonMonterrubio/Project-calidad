@@ -415,7 +415,6 @@
   <GQAM:GaExecHost xmi:id="_AcH0wEYSEfGJzLEwe25cEw" resMult="(1, est)" base_Classifier="_YXUA0EMYEfGUsvfU6if9iw"/>
   <GQAM:GaExecHost xmi:id="_CE1fAEYSEfGJzLEwe25cEw" resMult="(1, est)" base_Classifier="_YqSAIEMYEfGUsvfU6if9iw"/>
   <PAM:PaLogicalResource xmi:id="_iTySwEYSEfGJzLEwe25cEw" base_Classifier="_7xqZkEMYEfGUsvfU6if9iw" utilization="(expr=$U_BD, source=calc)" poolSize="(expr=$postgres)"/>
-  <PAM:PaLogicalResource xmi:id="_os5w8EYSEfGJzLEwe25cEw" base_Classifier="_uO7NUEMYEfGUsvfU6if9iw" poolSize="(value=20-50, source=est)"/>
   <GQAM:GaStep xmi:id="_02ZeAEliEfGlM9xeY4vQvg" base_NamedElement="_sLwi8ESdEfG5IfPuLrm8vg" base_Action="_sLwi8ESdEfG5IfPuLrm8vg" rep="(value=10)">
     <hostDemand>(value= 2, unit=ms, statQ=mean, source=est)</hostDemand>
   </GQAM:GaStep>

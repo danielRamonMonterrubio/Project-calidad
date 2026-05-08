@@ -1,0 +1,131 @@
+strict digraph {
+	graph [ pad="1.3", ranksep="1.3", nodesep="1.3" ];
+	overlap=scale;
+	splines=true;
+	rankdir="LR";
+	
+	node [ fixedsize=true ];
+	    
+    subgraph "places" {
+        node [ label="", shape=circle, width=1.3 ]
+		"_KWHDYErNEfGV4fLbNWG3tQ" [ label="postgis + postgres",  xlabel="M=1" ];
+		"_KWHDYUrNEfGV4fLbNWG3tQ" [ label="Express.js",  xlabel="M=4" ];
+		"_KV8ERErNEfGV4fLbNWG3tQ" [ label="Es_Dia_Valido",  ];
+		"_KV0vg0rNEfGV4fLbNWG3tQ" [ label="",  ];
+		"_KWHqfErNEfGV4fLbNWG3tQ" [ label="",  ];
+		"_KV8rVUrNEfGV4fLbNWG3tQ" [ label="Reservas_Dia",  ];
+		"_KV8rVErNEfGV4fLbNWG3tQ" [ label="",  ];
+		"_KWHqcErNEfGV4fLbNWG3tQ" [ label="",  ];
+		"_KV5A8UrNEfGV4fLbNWG3tQ" [ label="",  ];
+		"_KWLU0ErNEfGV4fLbNWG3tQ" [ label="Users",  ];
+		"_KWHqgUrNEfGV4fLbNWG3tQ" [ label="",  ];
+		"_KV62JErNEfGV4fLbNWG3tQ" [ label="",  ];
+		"_KV0vh0rNEfGV4fLbNWG3tQ" [ label="Validar_Credenciales",  ];
+		"_KWHqd0rNEfGV4fLbNWG3tQ" [ label="",  ];
+		"_KV8rWErNEfGV4fLbNWG3tQ" [ label="Estructurar_Datos",  ];
+		"_KWA8xErNEfGV4fLbNWG3tQ" [ label="Inv_Cred",  ];
+		"_KV62J0rNEfGV4fLbNWG3tQ" [ label="Acierto",  ];
+		"_KV8rUUrNEfGV4fLbNWG3tQ" [ label="Mostrar_Error",  ];
+		"_KV5A8krNEfGV4fLbNWG3tQ" [ label="Validado",  ];
+		"_KV62IUrNEfGV4fLbNWG3tQ" [ label="Dia_Invalido",  ];
+		"_KV8EQUrNEfGV4fLbNWG3tQ" [ label="Consultar_Reservas",  ];
+		"_KWA8wUrNEfGV4fLbNWG3tQ" [ label="FAllo",  ];
+		"_KV0vhErNEfGV4fLbNWG3tQ" [ label="Mostrar_Reservas",  ];
+		"_KV5A9UrNEfGV4fLbNWG3tQ" [ label="Consultar_Reservas_Dia_BD",  ];
+    }
+    
+    subgraph "immediate" {
+    	node [ label="", color=black, shape=box, width=0.2, height=1.3, style=filled ];
+		"_KWHqcUrNEfGV4fLbNWG3tQ" [  ];
+		"_KWA8xUrNEfGV4fLbNWG3tQ" [  ];
+		"_KWF1QUrNEfGV4fLbNWG3tQ" [  xlabel="p=0.9"  ];
+		"_KWA8wkrNEfGV4fLbNWG3tQ" [  ];
+		"_KWHqfUrNEfGV4fLbNWG3tQ" [  ];
+		"_KWA8x0rNEfGV4fLbNWG3tQ" [  xlabel="p=0.1"  ];
+		"_KV0vhUrNEfGV4fLbNWG3tQ" [  ];
+		"_KV62KErNEfGV4fLbNWG3tQ" [  ];
+		"_KV62IkrNEfGV4fLbNWG3tQ" [  ];
+		"_KV8rUkrNEfGV4fLbNWG3tQ" [  ];
+		"_KV8EQkrNEfGV4fLbNWG3tQ" [  ];
+		"_KWEnI0rNEfGV4fLbNWG3tQ" [  xlabel="p=0.7"  ];
+		"_KWHqgkrNEfGV4fLbNWG3tQ" [  ];
+		"_KWHqeErNEfGV4fLbNWG3tQ" [  ];
+		"_KWEAE0rNEfGV4fLbNWG3tQ" [  xlabel="p=0.1"  ];
+		"_KV62JUrNEfGV4fLbNWG3tQ" [  ];
+		"_KWBj30rNEfGV4fLbNWG3tQ" [  xlabel="p=0.3"  ];
+		"_KWBj00rNEfGV4fLbNWG3tQ" [  xlabel="p=0.9"  ];
+		"_KV5A80rNEfGV4fLbNWG3tQ" [  ];
+    }
+
+    subgraph "timed" {
+    	node [ label="", shape=box, width=0.2, height=1.3 ];
+		"_KV8rWUrNEfGV4fLbNWG3tQ" [ xlabel="t=14.285714\ninfServ" ];
+		"_KV0viErNEfGV4fLbNWG3tQ" [ xlabel="t=33.333332\ninfServ" ];
+		"_KV8rVkrNEfGV4fLbNWG3tQ" [ xlabel="t=11.764706\ninfServ" ];
+		"_KV5A9krNEfGV4fLbNWG3tQ" [ xlabel="t=22.222221\ninfServ" ];
+		"_KV0vgkrNEfGV4fLbNWG3tQ" [ xlabel="t=5.0\noneServ" ];
+		"_KV8ERUrNEfGV4fLbNWG3tQ" [ xlabel="t=100.0\ninfServ" ];
+    }
+
+	"_KV5A8krNEfGV4fLbNWG3tQ" -> "_KV5A80rNEfGV4fLbNWG3tQ";
+	"_KWHqd0rNEfGV4fLbNWG3tQ" -> "_KWHqeErNEfGV4fLbNWG3tQ";
+	"_KV0vhErNEfGV4fLbNWG3tQ" -> "_KV0vhUrNEfGV4fLbNWG3tQ";
+	"_KV5A80rNEfGV4fLbNWG3tQ" -> "_KWHDYUrNEfGV4fLbNWG3tQ";
+	"_KV8rWUrNEfGV4fLbNWG3tQ" -> "_KV0vhErNEfGV4fLbNWG3tQ";
+	"_KWA8wkrNEfGV4fLbNWG3tQ" -> "_KV8rUUrNEfGV4fLbNWG3tQ";
+	"_KV62KErNEfGV4fLbNWG3tQ" -> "_KWHDYErNEfGV4fLbNWG3tQ";
+	"_KV8rWUrNEfGV4fLbNWG3tQ" -> "_KWHDYUrNEfGV4fLbNWG3tQ";
+	"_KWHqfUrNEfGV4fLbNWG3tQ" -> "_KV0vh0rNEfGV4fLbNWG3tQ";
+	"_KV8rVkrNEfGV4fLbNWG3tQ" -> "_KWHDYUrNEfGV4fLbNWG3tQ";
+	"_KV0vh0rNEfGV4fLbNWG3tQ" -> "_KV0viErNEfGV4fLbNWG3tQ";
+	"_KV8rVErNEfGV4fLbNWG3tQ" -> "_KWA8x0rNEfGV4fLbNWG3tQ";
+	"_KWHqgkrNEfGV4fLbNWG3tQ" -> "_KV8rWErNEfGV4fLbNWG3tQ";
+	"_KWA8xUrNEfGV4fLbNWG3tQ" -> "_KWHDYUrNEfGV4fLbNWG3tQ";
+	"_KV0vhUrNEfGV4fLbNWG3tQ" -> "_KV62JErNEfGV4fLbNWG3tQ";
+	"_KV0vgkrNEfGV4fLbNWG3tQ" -> "_KWLU0ErNEfGV4fLbNWG3tQ";
+	"_KV62KErNEfGV4fLbNWG3tQ" -> "_KWHqgUrNEfGV4fLbNWG3tQ";
+	"_KWBj00rNEfGV4fLbNWG3tQ" -> "_KV5A8krNEfGV4fLbNWG3tQ";
+	"_KWHqcUrNEfGV4fLbNWG3tQ" -> "_KV5A9UrNEfGV4fLbNWG3tQ";
+	"_KV8rWErNEfGV4fLbNWG3tQ" -> "_KV8rWUrNEfGV4fLbNWG3tQ";
+	"_KV5A8UrNEfGV4fLbNWG3tQ" -> "_KWEnI0rNEfGV4fLbNWG3tQ";
+	"_KV8rUUrNEfGV4fLbNWG3tQ" -> "_KV8rUkrNEfGV4fLbNWG3tQ";
+	"_KV62IUrNEfGV4fLbNWG3tQ" -> "_KV62IkrNEfGV4fLbNWG3tQ";
+	"_KV8rVErNEfGV4fLbNWG3tQ" -> "_KWBj00rNEfGV4fLbNWG3tQ";
+	"_KV62J0rNEfGV4fLbNWG3tQ" -> "_KV62KErNEfGV4fLbNWG3tQ";
+	"_KV5A8UrNEfGV4fLbNWG3tQ" -> "_KWBj30rNEfGV4fLbNWG3tQ";
+	"_KV8rVkrNEfGV4fLbNWG3tQ" -> "_KWHqcErNEfGV4fLbNWG3tQ";
+	"_KWA8xErNEfGV4fLbNWG3tQ" -> "_KWA8xUrNEfGV4fLbNWG3tQ";
+	"_KWHqgUrNEfGV4fLbNWG3tQ" -> "_KWHqgkrNEfGV4fLbNWG3tQ";
+	"_KWHqcErNEfGV4fLbNWG3tQ" -> "_KWHqcUrNEfGV4fLbNWG3tQ";
+	"_KV62IkrNEfGV4fLbNWG3tQ" -> "_KWHDYUrNEfGV4fLbNWG3tQ";
+	"_KV8EQUrNEfGV4fLbNWG3tQ" -> "_KV8EQkrNEfGV4fLbNWG3tQ";
+	"_KWHqfErNEfGV4fLbNWG3tQ" -> "_KWHqfUrNEfGV4fLbNWG3tQ";
+	"_KV5A80rNEfGV4fLbNWG3tQ" -> "_KV8EQUrNEfGV4fLbNWG3tQ";
+	"_KWHqeErNEfGV4fLbNWG3tQ" -> "_KV8ERErNEfGV4fLbNWG3tQ";
+	"_KV8ERUrNEfGV4fLbNWG3tQ" -> "_KV5A8UrNEfGV4fLbNWG3tQ";
+	"_KV5A9UrNEfGV4fLbNWG3tQ" -> "_KV5A9krNEfGV4fLbNWG3tQ";
+	"_KV62JErNEfGV4fLbNWG3tQ" -> "_KV62JUrNEfGV4fLbNWG3tQ";
+	"_KWLU0ErNEfGV4fLbNWG3tQ" -> "_KV62JUrNEfGV4fLbNWG3tQ";
+	"_KWA8xUrNEfGV4fLbNWG3tQ" -> "_KV62JErNEfGV4fLbNWG3tQ";
+	"_KV8rUkrNEfGV4fLbNWG3tQ" -> "_KV8EQUrNEfGV4fLbNWG3tQ";
+	"_KWEAE0rNEfGV4fLbNWG3tQ" -> "_KWA8wUrNEfGV4fLbNWG3tQ";
+	"_KV5A9krNEfGV4fLbNWG3tQ" -> "_KV0vg0rNEfGV4fLbNWG3tQ";
+	"_KWHDYErNEfGV4fLbNWG3tQ" -> "_KWHqcUrNEfGV4fLbNWG3tQ";
+	"_KWA8wUrNEfGV4fLbNWG3tQ" -> "_KWA8wkrNEfGV4fLbNWG3tQ";
+	"_KV0vgkrNEfGV4fLbNWG3tQ" -> "_KWHqfErNEfGV4fLbNWG3tQ";
+	"_KV8rVUrNEfGV4fLbNWG3tQ" -> "_KV8rVkrNEfGV4fLbNWG3tQ";
+	"_KWHDYUrNEfGV4fLbNWG3tQ" -> "_KWHqeErNEfGV4fLbNWG3tQ";
+	"_KWEnI0rNEfGV4fLbNWG3tQ" -> "_KV8rVUrNEfGV4fLbNWG3tQ";
+	"_KV0vg0rNEfGV4fLbNWG3tQ" -> "_KWEAE0rNEfGV4fLbNWG3tQ";
+	"_KWF1QUrNEfGV4fLbNWG3tQ" -> "_KV62J0rNEfGV4fLbNWG3tQ";
+	"_KWHDYUrNEfGV4fLbNWG3tQ" -> "_KWHqgkrNEfGV4fLbNWG3tQ";
+	"_KV8ERErNEfGV4fLbNWG3tQ" -> "_KV8ERUrNEfGV4fLbNWG3tQ";
+	"_KWHDYUrNEfGV4fLbNWG3tQ" -> "_KWHqfUrNEfGV4fLbNWG3tQ";
+	"_KWA8x0rNEfGV4fLbNWG3tQ" -> "_KWA8xErNEfGV4fLbNWG3tQ";
+	"_KWA8wkrNEfGV4fLbNWG3tQ" -> "_KWHDYErNEfGV4fLbNWG3tQ";
+	"_KV62IkrNEfGV4fLbNWG3tQ" -> "_KV8EQUrNEfGV4fLbNWG3tQ";
+	"_KV0viErNEfGV4fLbNWG3tQ" -> "_KV8rVErNEfGV4fLbNWG3tQ";
+	"_KV8EQkrNEfGV4fLbNWG3tQ" -> "_KWHqd0rNEfGV4fLbNWG3tQ";
+	"_KV0vg0rNEfGV4fLbNWG3tQ" -> "_KWF1QUrNEfGV4fLbNWG3tQ";
+	"_KWBj30rNEfGV4fLbNWG3tQ" -> "_KV62IUrNEfGV4fLbNWG3tQ";
+}
